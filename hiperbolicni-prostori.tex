@@ -11,6 +11,7 @@
 
 \newtheorem{izrek}{Izrek}
 \newtheorem{definicija}{Definicija}
+\newtheorem{trditev}{Trditev}
 \newtheorem{posledica}{Posledica}
 
 \begin{document}
@@ -33,6 +34,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Modeli
 \section{Modeli hiperboličnih prostorov}
+%%%%%%%%%%%%%%%%%%%
+% Osnovne definicije
 \subsection{Osnovne definicije}
 
 Naslednje definicije opisujejo mnogoterosti z visoko simetrijo. Natančneje to pomeni, da so njihove grupe izometrij velike. Najpreprostejši primer so Evklidski prostori - zanje že intuitivno vemo, da obstajajo preslikave, izometrije, ki poljubni točki preslikajo eno v drugo, celo več, ortonormirano bazo v prvi točki lahko preslikajo v ortonormirano bazo v drugi. Izkazalo se bo, da to niso edini taki prostori. Drug primer so $n$-dimenzionalne sfere $\mathbb{S}^{n}$, mi pa se bomo posvetili študiju hiperboličnih prostorov.
@@ -87,22 +90,26 @@ Konformni difeomorfizmi med Riemannovimi mnogoterostmi so ravno difeomorfizmi, k
 
 Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko primerjamo z Evklidskim prostorom. Pravimo, da je Riemannova mnogoterost $(M,g)$ \emph{lokalno konformno ploska}, če ima vsaka točka $p\in M$ okolico, ki je konformno ekvivalentna odprti množici v $(\mathbb{R}^{n}, \bar{g})$, kjer $\bar{g}$ označuje običajno Evklidsko metriko.
 
-%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 % Modeli
 \subsection{Modeli}
+
 V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so "frame homogeneous" Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo frame homogeneity. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
 
 Naj bo $n \geq 1$ in izberimo $R>0$.
 \emph{$(n+1)$-dimenzionalni prostor Minkowskega} je prostor $\mathbb{R}^{n,1}$, ki ga v standardnih koordinatah $(x^{1}, \dots , x^{n}, \tau)$ opremimo z \emph{metriko Minkowskega}
-\begin{equation}
+\begin{equation}\label{eq:Mink metrika}
 \bar{q}^{n,1} = (dx^{1})^2 + \cdots + (dx^{n})^2 - (d\tau)^2.
 \end{equation}
 Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
 
+Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboličnega prostora dimenzije $n$ in polmera $R$.
+
+%%%%%%%%%%%
 \begin{enumerate}
 \item
 % hiperboloid
-\textsc{Hiperboloid} $\mathbb{H}^{n}(R)$ definramo na naslednji način.
+\textsc{Hiperboloid} $\mathbb{H}^{n}(R)$.
 
 Vzemimo $(n+1)$-dimenzionalni prostor Minkowskega $\mathbb{R}^{n,1}$ s standardnimi koordinatami $(x^{1}, \dots , x^{n}, \tau)$ in metriko $\bar{q}$.
 Pozitivni del ($\tau > 0$) dvodelnega hiperboloida $(x^{1})^2 + \cdots + (x^{n})^2 - \tau^2 = -R^2$ opremimo z metriko
@@ -129,7 +136,7 @@ Na $n$-dimenzionalni krogli $\mathbb{B}^{n}(R)$ s središčem v izhodišču pros
 \begin{equation}\label{eq:K^n metrika}
 \u g_{R}^{3} = 4R^4 \frac{(du^{1})^2 + \cdots + (du^{n})^2}{(R^2-|u|^2)^2}.
 \end{equation}
-Mnogoterost $(\mathbb{B}^{n}(R), \u g_{R}^{3})$ se imenuje \emph{Poincar\'ejeva krogla}.
+Mnogoterost $(\mathbb{B}^{n}(R), \u g_{R}^{3})$ definira \emph{Poincar\'ejevo kroglo}.
 
 \item
 % Poincarejev polprostor
@@ -140,9 +147,44 @@ Na Evklidskem prostoru $\mathbb{R}^{n}$ uvedimo koordinate $(x^{1}, \dots , x^{n
 \u g_{R}^{4} = R^2 \frac{(dx^{1})^2 + \cdots + (dx^{n-1})^2 + dy^2}{y^2}.
 \end{equation}
 Mnogoterosti $(\mathbb{U}^{n}(R), \u g_{R}^{4})$ pravimo \emph{Poincar\'ejev polprostor}.
-
 %
 \end{enumerate}
+%%%%%%%%%%
+
+Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije $n$ s polmerom $R$ označimo z $\mathbb{H}^{n}(R)$, metriko pa z $\u g_{R}$, pri čemer imamo v mislih poljubnega izmed modelov. Če za polmer izberemo $R=1$, Riemannovo mnogoterost označimo z $(\mathbb{H}^{n}, \u g)$ in imenujemo \emph{hiperbolični prostor} dimenzije $n$. V dveh dimenzijah dobimo \emph{hiperbolično ravnino}, h kateri se bomo vrnili kasneje.
+
+%%%%%%%%%%%%%%%%%%%
+% Izometričnost modelov
+\subsection{Izometričnost modelov}
+
+\begin{izrek}
+Modeli $n$-dimenzionalnih hiperboličnih prostorov s polmerom $R$ so paroma izometrični.
+\end{izrek}
+
+\begin{trditev}
+Hiperbolični prostor $(\mathbb{H}^{n}(R), \u g)$ je lokalno konformno ploščat.
+\end{trditev}
+
+\begin{trditev}
+Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je "frame homogeneous".
+\end{trditev}
+
+Dovolj je pokazati, da za poljubno točko $p \in \mathbb{H}^{n}(R)$ in ortonormirano bazo $\{e_{1}, \dots , e_{n} \}$ prostora $T_{p}\mathbb{H}^{n}(R)$ obstaja ortogonalna preslikava, ki preslika točko $N=(0, \dots , 0, R)$ v $p$ ter ortonormirano bazo $\{\partial_{1}, \dots , \partial_{n} \}$ za $T_{N}\mathbb{H}^{n}(R)$ v bazo $\{e_{i}\}_{i}$.
+
+Naj bo $p \in \mathbb{H}^{n}(R)$ poljubna točka. Identificirajmo $p$ z vektorjem dolžine $R$ v $T_{p}\mathbb{R}^{n,1}$  in postavimo $\bar{p} = \frac{p}{R}$. $\bar{p}$ je enotski vektor glede na metriko Minkowskega $\bar{q}$, kaže v smeri $p$, in $\bar{p} \in T_{p}\mathbb{R}^{n,1}$.
+Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot 
+\[\mathbb{H}^{n}(R) = F^{-1}(-R^2) \cap \{ \tau>0 \}, \] 
+kjer je preslikava $F \colon \mathbb{R}^{n+1} \to \mathbb{R}$ definirana s predpisom $F(x^{1}, \dots , x^{n}, \tau) = \sum_{i=1}^{n} (x^{i})^2 - \tau^2$.
+Tedaj je gradient preslikave $F$ glede na metriko $\bar{q}$ enak
+\begin{equation}
+\textup{grad} F = 2 \sum_{i=1}^{n} x^{i} \frac{\partial}{\partial x^{i}} + 2\tau \frac{\partial}{\partial \tau}. \nonumber
+\end{equation} 
+Opazimo, da je $\bar{p} = 2 \cdot \textup{grad} F$ in zato $\bar{p} \perp T_{p}\mathbb{H}^{n}(R)$.
+Potem je množica $\{ e_{1}, \dots , e_{n}, \bar{p} \}$ ortonormirana baza prostora $\mathbb{R}^{n,1}$ glede na metriko $\bar{q}$.
+
+Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po konstrukciji velja $M \in \textup{O}^{+}(n,1)$ in $M$ slika $\{\partial_{1}, \dots , \partial_{n+1} \}$ v $\{e_{1}, \dots , e_{n}, \bar{p} \}$ ter $N$ v $p$.
+Ker je $M$ kot preslikava linearna na $\mathbb{R}^{n,1}$, je njen diferencial v točki $N$, $dM_{N} \colon T_{N}\mathbb{R}^{n,1} \to T_{p}\mathbb{R}^{n,1}$, prav tako predstavljen z matriko $M$. To pa pomeni, da je $dM_{n}(\partial_{i}) = e_{i}$, $i = 1, \dots , n$.
+$M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ frame homogeneous.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hiperbolična geometrija
