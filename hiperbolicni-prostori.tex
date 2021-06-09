@@ -161,9 +161,58 @@ Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije 
 Modeli $n$-dimenzionalnih hiperboličnih prostorov s polmerom $R$ so paroma izometrični.
 \end{izrek}
 
+Dokaz bo potekal v več korakih. Najprej moramo preveriti, da je hiperbolični prostor Riemannova mnogoterost. Nato bomo konstruirali izometrije med naslednjimi pari modelov: hiperboloidom in Beltrami-Kleinovim modelom, hiperboloidom in Poincar\'ejevo kroglo ter Poincar\'ejevim polprostorom in Poincar\'ejevo kroglo.
+
+Dokažimo najprej, da je hiperboloid $\mathbb{H}^{n}(R)$ Riemannova podmnogoterost prostora $\mathbb{R}^{n,1}$. To zadostuje, saj bo iz izometričnosti sledilo, da so vsi modeli Riemannove mnogoterosti.
+Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot 
+\begin{equation}\label{eq:H^n enacba}
+\mathbb{H}^{n}(R) = F^{-1}(-R^2) \cap \{ \tau>0 \},
+\end{equation}
+kjer je preslikava $F \colon \mathbb{R}^{n+1} \to \mathbb{R}$ definirana s predpisom $F(x^{1}, \dots , x^{n}, \tau) = \sum_{i=1}^{n} (x^{i})^2 - \tau^2$.
+Tangentni prostor v točki $p \in \mathbb{H}^{n}(R)$, ki je enak $T_{p}\mathbb{H}^{n}(R) = \ker dF_{p}$, razpenjajo vektorji $X^{i} = \tau \frac{\partial}{\partial x^{i}} + x^{i} \frac{\partial}{\partial \tau}$ za $i = 1, \dots , n$. Ker je njihov produkt (glede na metriko $\bar{q}$) pozitiven, je metrika $\u g_{R}^{1}$ pozitivno definitna in določa Riemannovo podmnogoterost $(\mathbb{H}^{n}(R), \u g_{R}^{1})$. 
+
+\subsubsection{Centralna projekcija}
+Izometrija med hiperboloidom in Beltrami-Kleinovim modelom se imenuje \emph{centralna projekcija}, $c \colon \mathbb{H}^{n}(R) \to \mathbb{K}^{n}(R)$.
+
+Naj bo $T=(x^{1}, \dots , x^{n}, \tau) \in \mathbb{H}^{n}(R)$ poljubna točka. Presečišče premice $OT$ skozi izhodišče v $\mathbb{R}^{n,1}$ in točko $T$ s hiperravnino $\{ (x, \tau); \ \tau=R \}$ označimo z $Y \in \mathbb{R}^{n,1}$. Pišimo $Y=(y,R)$, kjer je $y = c(T) \in \mathbb{K}^{n}(R)$ slika $T$ s centralno projekcijo. 
+Tedaj se koordinate točke $Y$ izražajo s koordinatami $T$, natančneje, $Y=\frac{R}{\tau} T$. Preslikavo $c$ zato podaja zveza
+\begin{equation}\label{eq: cent-proj}
+c(x, \tau) = \frac{R}{\tau} x.
+\end{equation}
+Ker je slika s preslikavo $c$ točka na hiperboloidu, velja
+\[ |c(x,\tau)|^2 = \frac{R^2}{\tau^2} |x|^2 = \frac{R^2}{\tau^2}(\tau^2-R^2) = R^2 \left(1-\frac{R^2}{\tau^2} \right) < R^2, \]
+torej je $c(x, \tau) \in \mathbb{K}^{n}(R)$ in centralna projekcija je dobro definirana.
+
+Da je preslikava $c$ difeomorfizem, bomo pokazali s konstrukcijo njenega inverza.
+Vzemimo poljubno točko $y \in \mathbb{K}^{n}(R)$. Potem obstaja enoličen $\lambda>0$, da velja $(x, \tau) = \lambda (y,R) \in \mathbb{H}^{n}(R)$. Slednja točka je določena z zvezo $\lambda^2 (|y|^2-R^2)=-R^2$, od koder sledi $\lambda = \frac{R}{(R^2-|y|^2)^{1/2}}$.
+Potem predpis
+\begin{equation}\label{eq:c^{-1}}
+c^{-1}(y) = \left( \frac{Ry}{(R^2-|y|^2)^{1/2}}, \frac{R^2}{(R^2-|y|^2)^{1/2}} \right)
+\end{equation}
+definira gladko preslikavo, ki je inverz centralne projekcije.
+
+Nazadnje dokažimo, da je $c$ izometrija. Želimo videti, da velja enakost $(c^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{2}$.
+Diferenciala točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ sta enaka
+\[ dx^{i} = \frac{Rdy^{k}}{(R^2-|y|^2)^{1/2}} + \frac{Ry^{i} \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}, \]
+\[ d\tau = \frac{R^2 \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}. \]
+Od tod izračunamo
+\[ (c^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = R^2 \frac{\sum_{i=1}^{n}(dy^{i})^2}{R^2-|y|^2} + R^2 \frac{(\sum_{i=1}^{n}y^{i}dy^{i})^2}{(R^2-|y|^2)^2} = \u g_{R}^{2}. \]
+Torej je centralna projekcija res izometrija med $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{K}^{n}(R), \u g_{R}^{2})$.
+
+\subsubsection{Hiperbolična stereografska projekcija}
+
+\subsubsection{Posplošena Cayleyjeva transformacija}
+
+%%%%%%%%%%%%%%%%%%%
+% Lastnosti hiperboličnih prostorov
+\subsection{Lastnosti hiperboličnih prostorov}
+
 \begin{trditev}
 Hiperbolični prostor $(\mathbb{H}^{n}(R), \u g)$ je lokalno konformno ploščat.
 \end{trditev}
+
+Dokaz:
+Za model hiperboličnega prostora vzemimo Poincar\'ejevo kroglo  $\mathbb{B}^{n}(R)$. Identična preslikava $id \colon (\mathbb{B}^{n}(R), \u g_{R}^{3}) \to (\mathbb{R}^{n}, \bar{g})$ je konformna in porodi konformno ekvivalenco Poincar\'ejeve krogle z odprto podmnožico Evklidskega prostora. Zaradi izometričnosti modelov sledi, da je hiperbolični prostor lokalno konformno ploščat.
 
 % Lorentzova grupa
 \begin{definicija}
@@ -176,12 +225,11 @@ Njeno podgrupo, ki ohranja hiperboloid $\mathbb{H}^{n}(R)$ označimo z $\textup{
 Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je "frame homogeneous".
 \end{trditev}
 
+Dokaz:
 Dovolj je pokazati, da za poljubno točko $p \in \mathbb{H}^{n}(R)$ in ortonormirano bazo $\{e_{1}, \dots , e_{n} \}$ prostora $T_{p}\mathbb{H}^{n}(R)$ obstaja ortogonalna preslikava, ki preslika točko $N=(0, \dots , 0, R)$ v $p$ ter ortonormirano bazo $\{\partial_{1}, \dots , \partial_{n} \}$ za $T_{N}\mathbb{H}^{n}(R)$ v bazo $\{e_{i}\}_{i}$.
 
 Naj bo $p \in \mathbb{H}^{n}(R)$ poljubna točka. Identificirajmo $p$ z vektorjem dolžine $R$ v $T_{p}\mathbb{R}^{n,1}$  in postavimo $\bar{p} = \frac{p}{R}$. $\bar{p}$ je enotski vektor glede na metriko Minkowskega $\bar{q}$, kaže v smeri $p$, in $\bar{p} \in T_{p}\mathbb{R}^{n,1}$.
-Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot 
-\[\mathbb{H}^{n}(R) = F^{-1}(-R^2) \cap \{ \tau>0 \}, \] 
-kjer je preslikava $F \colon \mathbb{R}^{n+1} \to \mathbb{R}$ definirana s predpisom $F(x^{1}, \dots , x^{n}, \tau) = \sum_{i=1}^{n} (x^{i})^2 - \tau^2$.
+Prostor $\mathbb{H}^{n}(R)$ predstavimo kot v~\ref{eq:H^n enacba}.
 Tedaj je gradient preslikave $F$ glede na metriko $\bar{q}$ enak
 \begin{equation}
 \textup{grad} F = 2 \sum_{i=1}^{n} x^{i} \frac{\partial}{\partial x^{i}} + 2\tau \frac{\partial}{\partial \tau}. \nonumber

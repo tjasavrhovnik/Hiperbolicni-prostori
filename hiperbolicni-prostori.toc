@@ -3,4 +3,8 @@
 \contentsline {subsection}{\numberline {1.1}Osnovne definicije}{3}{}%
 \contentsline {subsection}{\numberline {1.2}Modeli}{4}{}%
 \contentsline {subsection}{\numberline {1.3}Izometričnost modelov}{5}{}%
-\contentsline {section}{\numberline {2}Hiperbolična geometrija}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Centralna projekcija}{5}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Hiperbolična stereografska projekcija}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Posplošena Cayleyjeva transformacija}{6}{}%
+\contentsline {subsection}{\numberline {1.4}Lastnosti hiperboličnih prostorov}{6}{}%
+\contentsline {section}{\numberline {2}Hiperbolična geometrija}{7}{}%
