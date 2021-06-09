@@ -13,6 +13,7 @@
 \newtheorem{definicija}{Definicija}
 \newtheorem{trditev}{Trditev}
 \newtheorem{posledica}{Posledica}
+\newtheorem{primer}{Primer}
 
 \begin{document}
 
@@ -56,18 +57,15 @@ Pravimo, da je $(M,g)$ \emph{homogena Riemannova mnogoterost}, če grupa $\textu
 Če je $\phi$ izometrija Riemannove mnogoterosti $(M,g)$, je njen diferencial $d\phi$ preslikava na tangentnem prostoru $TM$. V vsaki točki $p \in M$ diferencial definira linearno izometrijo $d\phi_{p} \colon T_{p}M \to T_{\phi(p)}M$.
 
 \begin{definicija}
-\begin{enumerate}
-\item
 Naj bo $p \in M$. Podgrupo grupe $\textup{Iso}(M,g)$ izometrij, ki fiksirajo $p$, imenujemo \emph{izotropična podgrupa} v $p$ in označimo z 
 $\textup{Iso}_{p}(M,g)$. 
-\item
+
 Preslikavi $I_{p} \colon \textup{Iso}_{p}(M,g) \to \textup{GL}(T_{p}M)$, definirani s predpisom $I_{p}(\phi) = d\phi_{p}$, pravimo \emph{izotropična reprezentacija}.
-\item
+
 Mnogoterost $M$ je \emph{izotropična v točki $p$}, kadar izotropična reprezentacija deluje tranzitivno na množico enotskih vektorjev v $T_{p}M$. Nadalje pravimo, da je $M$ \emph{izotropična}, če je izotropična v vsaki točki $p \in M$.
-\end{enumerate}
 \end{definicija}
 
-Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{p}M \}$ množico vseh ortonormiranih baz na tangentnih prostorih mnogoterosti $M$. Delovanje grupe izometrij $\textup{Iso}(M,g)$ na množico $\textup{O}(M)$ povezuje ortonormirani bazi v točkah $p$ in $\phi(p)$ na naslednji način. Naj bo $\phi \in \textup{Iso}(M,g)$ in ${e_{1}, \dots , e_{n}} \in \textup{O}(M)$. Delovanje definiramo s predpisom
+Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{p}M \}$ množico vseh ortonormiranih baz na tangentnih prostorih mnogoterosti $M$. Delovanje grupe izometrij $\textup{Iso}(M,g)$ na množico $\textup{O}(M)$ povezuje ortonormirani bazi v točkah $p$ in $\phi(p)$ na naslednji način. Naj bo $\phi \in \textup{Iso}(M,g)$ in $\{e_{1}, \dots , e_{n} \} \in \textup{O}(M)$. Delovanje definiramo s predpisom
 \begin{equation}\label{eq:delovanje}
 \phi \cdot (e_{1}, \dots , e_{n}) = (d\phi_{p}(e_{1}), \dots , d\phi_{p}(e_{n})).
 \end{equation}
@@ -76,7 +74,7 @@ Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{
 Riemannova mnogoterost $(M,g)$ je \emph{frame homogeneous} oziroma \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
 \end{definicija}
 
-Geometrično si homogeno Riemannovo mnogoterost predstavljamo kot tako, ki ne glede na izbor točke na njej, izgleda enako.
+Geometrično si homogeno Riemannovo mnogoterost predstavljamo kot tako, ki v vsaki točki na njej izgleda enako.
 Izotropična Riemannova mnogoterost pa izgleda enako tudi v vseh smereh.
 
 % konformnost
@@ -88,7 +86,7 @@ V tem primeru pravimo, da sta mnogoterosti $(M,g)$ in $(\tilde{M}, \tilde{g})$ \
 
 Konformni difeomorfizmi med Riemannovimi mnogoterostmi so ravno difeomorfizmi, ki ohranjajo velikosti kotov. Tako se pomen zgornje definicije sklada s konformnostjo, ki jo poznamo iz kompleksne analize.
 
-Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko primerjamo z Evklidskim prostorom. Pravimo, da je Riemannova mnogoterost $(M,g)$ \emph{lokalno konformno ploska}, če ima vsaka točka $p\in M$ okolico, ki je konformno ekvivalentna odprti množici v $(\mathbb{R}^{n}, \bar{g})$, kjer $\bar{g}$ označuje običajno Evklidsko metriko.
+Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko primerjamo z Evklidskim prostorom. Pravimo, da je Riemannova mnogoterost $(M,g)$ \emph{lokalno konformno ploska}, če ima vsaka točka $p\in M$ okolico, ki je konformno ekvivalentna odprti množici v $(\mathbb{R}^{n}, \bar{g})$, kjer $\bar{g}$ označuje običajno Evklidsko metriko. Videli bomo, da imajo hiperbolični prostori to lastnost.
 
 %%%%%%%%%%%%%%%%%%%
 % Modeli
@@ -102,6 +100,10 @@ Naj bo $n \geq 1$ in izberimo $R>0$.
 \bar{q}^{n,1} = (dx^{1})^2 + \cdots + (dx^{n})^2 - (d\tau)^2.
 \end{equation}
 Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
+
+\begin{primer}
+4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poncar\'ejeva grupa} sestavljajo $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in tri "time boosts" (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
+\end{primer}
 
 Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboličnega prostora dimenzije $n$ in polmera $R$.
 
