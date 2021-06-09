@@ -1,0 +1,158 @@
+\documentclass[a4paper]{article}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{url}
+
+\usepackage{graphicx}
+
+\newtheorem{izrek}{Izrek}
+\newtheorem{definicija}{Definicija}
+\newtheorem{posledica}{Posledica}
+
+\begin{document}
+
+\title{\Huge\textbf{Hiperbolični prostori}} 
+\author{\large\textsc{Tjaša Vrhovnik}\\
+	Fakulteta za matematiko in fiziko\\
+	Oddelek za matematiko}
+
+\thispagestyle{empty}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modeli
+\section{Modeli hiperboličnih prostorov}
+\subsection{Osnovne definicije}
+
+Naslednje definicije opisujejo mnogoterosti z visoko simetrijo. Natančneje to pomeni, da so njihove grupe izometrij velike. Najpreprostejši primer so Evklidski prostori - zanje že intuitivno vemo, da obstajajo preslikave, izometrije, ki poljubni točki preslikajo eno v drugo, celo več, ortonormirano bazo v prvi točki lahko preslikajo v ortonormirano bazo v drugi. Izkazalo se bo, da to niso edini taki prostori. Drug primer so $n$-dimenzionalne sfere $\mathbb{S}^{n}$, mi pa se bomo posvetili študiju hiperboličnih prostorov.
+
+% izometrija
+\begin{definicija}
+Naj bosta $(M,g)$ in $(\tilde{M}, \tilde{g})$ Riemannovi mnogoterosti. Gladka preslikava $\phi \colon M \to \tilde{M}$ \emph{ohranja metriko}, če velja $g = \phi^{*}\tilde{g}$.
+
+Difeomorfizem, ki ohranja metriko, imenujemo \emph{izometrija}. \emph{Lokalna izometrija} pa je lokalni difeomorfizem, ki ohranja metriko. 
+\end{definicija}
+
+% frame homogeneity
+\begin{definicija}
+Naj bo $(M,g)$ Riemannova mnogoterost. Množico izometrij mnogoterosti $M$, ki je grupa za komponiranje, označimo z $\textup{Iso}(M,g)$.
+Pravimo, da je $(M,g)$ \emph{homogena Riemannova mnogoterost}, če grupa $\textup{Iso}(M,g)$ deluje tranzitivno na $M$. To pomeni, da za poljuben par točk $p,q \in M$ obstaja izometrija $\phi \colon M \to M$ z lastnostjo $\phi(p)=q$.
+\end{definicija}
+
+Če je $\phi$ izometrija Riemannove mnogoterosti $(M,g)$, je njen diferencial $d\phi$ preslikava na tangentnem prostoru $TM$. V vsaki točki $p \in M$ diferencial definira linearno izometrijo $d\phi_{p} \colon T_{p}M \to T_{\phi(p)}M$.
+
+\begin{definicija}
+\begin{enumerate}
+\item
+Naj bo $p \in M$. Podgrupo grupe $\textup{Iso}(M,g)$ izometrij, ki fiksirajo $p$, imenujemo \emph{izotropična podgrupa} v $p$ in označimo z 
+$\textup{Iso}_{p}(M,g)$. 
+\item
+Preslikavi $I_{p} \colon \textup{Iso}_{p}(M,g) \to \textup{GL}(T_{p}M)$, definirani s predpisom $I_{p}(\phi) = d\phi_{p}$, pravimo \emph{izotropična reprezentacija}.
+\item
+Mnogoterost $M$ je \emph{izotropična v točki $p$}, kadar izotropična reprezentacija deluje tranzitivno na množico enotskih vektorjev v $T_{p}M$. Nadalje pravimo, da je $M$ \emph{izotropična}, če je izotropična v vsaki točki $p \in M$.
+\end{enumerate}
+\end{definicija}
+
+Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{p}M \}$ množico vseh ortonormiranih baz na tangentnih prostorih mnogoterosti $M$. Delovanje grupe izometrij $\textup{Iso}(M,g)$ na množico $\textup{O}(M)$ povezuje ortonormirani bazi v točkah $p$ in $\phi(p)$ na naslednji način. Naj bo $\phi \in \textup{Iso}(M,g)$ in ${e_{1}, \dots , e_{n}} \in \textup{O}(M)$. Delovanje definiramo s predpisom
+\begin{equation}\label{eq:delovanje}
+\phi \cdot (e_{1}, \dots , e_{n}) = (d\phi_{p}(e_{1}), \dots , d\phi_{p}(e_{n})).
+\end{equation}
+
+\begin{definicija}
+Riemannova mnogoterost $(M,g)$ je \emph{frame homogeneous} oziroma \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
+\end{definicija}
+
+Geometrično si homogeno Riemannovo mnogoterost predstavljamo kot tako, ki ne glede na izbor točke na njej, izgleda enako.
+Izotropična Riemannova mnogoterost pa izgleda enako tudi v vseh smereh.
+
+% konformnost
+\begin{definicija}
+Naj bosta $(M,g)$ in $(\tilde{M}, \tilde{g})$ Riemannovi mnogoterosti. Difeomorfizem $\phi \colon M \to \tilde{M}$ je \emph{konformna preslikava}, če obstaja taka pozitivna funkcija $\mu \in \mathcal{C}^{\infty}(M)$, da velja
+\[ \phi^{*}\tilde{g} = \mu g. \]
+V tem primeru pravimo, da sta mnogoterosti $(M,g)$ in $(\tilde{M}, \tilde{g})$ \emph{konformno ekvivalentni}.
+\end{definicija}
+
+Konformni difeomorfizmi med Riemannovimi mnogoterostmi so ravno difeomorfizmi, ki ohranjajo velikosti kotov. Tako se pomen zgornje definicije sklada s konformnostjo, ki jo poznamo iz kompleksne analize.
+
+Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko primerjamo z Evklidskim prostorom. Pravimo, da je Riemannova mnogoterost $(M,g)$ \emph{lokalno konformno ploska}, če ima vsaka točka $p\in M$ okolico, ki je konformno ekvivalentna odprti množici v $(\mathbb{R}^{n}, \bar{g})$, kjer $\bar{g}$ označuje običajno Evklidsko metriko.
+
+%%%%%%%%
+% Modeli
+\subsection{Modeli}
+V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so "frame homogeneous" Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo frame homogeneity. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
+
+Naj bo $n \geq 1$ in izberimo $R>0$.
+\emph{$(n+1)$-dimenzionalni prostor Minkowskega} je prostor $\mathbb{R}^{n,1}$, ki ga v standardnih koordinatah $(x^{1}, \dots , x^{n}, \tau)$ opremimo z \emph{metriko Minkowskega}
+\begin{equation}
+\bar{q}^{n,1} = (dx^{1})^2 + \cdots + (dx^{n})^2 - (d\tau)^2.
+\end{equation}
+Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
+
+\begin{enumerate}
+\item
+% hiperboloid
+\textsc{Hiperboloid} $\mathbb{H}^{n}(R)$ definramo na naslednji način.
+
+Vzemimo $(n+1)$-dimenzionalni prostor Minkowskega $\mathbb{R}^{n,1}$ s standardnimi koordinatami $(x^{1}, \dots , x^{n}, \tau)$ in metriko $\bar{q}$.
+Pozitivni del ($\tau > 0$) dvodelnega hiperboloida $(x^{1})^2 + \cdots + (x^{n})^2 - \tau^2 = -R^2$ opremimo z metriko
+\begin{equation}\label{eq:H^n metrika}
+\u g_{R}^{1} = \iota^{*}\bar{q},
+\end{equation}
+kjer $\iota$ označuje inkluzijo $\iota \colon \mathbb{H}^{n}(R) \to \mathbb{R}^{n,1}$. Dobljeno podmnogoterost $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ imenujemo \emph{hiperboloid} dimenzije $n$ s polmerom $R$.
+
+\item
+% Beltrami-Klein
+\textsc{Beltrami-Kleinov model} $\mathbb{K}^{n}(R)$
+
+Na $n$-dimenzionalni krogli $\mathbb{K}^{n}(R)$ s središčem v izhodišču prostora $\mathbb{R}^{n}$ in polmerom $R$ uvedimo koordinate $(w^{1}, \dots , w^{n})$. Kroglo opremimo z metriko
+\begin{equation}\label{eq:K^n metrika}
+\u g_{R}^{2} = R^2 \frac{(dw^{1})^2 + \cdots + (dw^{n})^2}{R^2-|w|^2} + R^2 \frac{(w^{1}dw^{1} + \cdots + w^{n}dw^{n})^2}{(R^2-|w|^2)^2}.
+\end{equation}
+Mnogoterost $(\mathbb{K}^{n}(R), \u g_{R}^{2})$ se imenuje \emph{Beltrami-Kleinov model}.
+
+\item
+% Poincarejeva korgla
+\textsc{Poincar\'ejeva krogla} $\mathbb{B}^{n}(R)$
+
+Na $n$-dimenzionalni krogli $\mathbb{B}^{n}(R)$ s središčem v izhodišču prostora $\mathbb{R}^{n}$ in polmerom $R$ uvedimo koordinate $(u^{1}, \dots , u^{n})$. Kroglo opremimo z metriko
+\begin{equation}\label{eq:K^n metrika}
+\u g_{R}^{3} = 4R^4 \frac{(du^{1})^2 + \cdots + (du^{n})^2}{(R^2-|u|^2)^2}.
+\end{equation}
+Mnogoterost $(\mathbb{B}^{n}(R), \u g_{R}^{3})$ se imenuje \emph{Poincar\'ejeva krogla}.
+
+\item
+% Poincarejev polprostor
+\textsc{Poincar\'ejev polprostor} $\mathbb{U}^{n}(R)$
+
+Na Evklidskem prostoru $\mathbb{R}^{n}$ uvedimo koordinate $(x^{1}, \dots , x^{n-1}, y)$ in njegov podprostor $\mathbb{U}^{n}(R) = \{ (x,y); \ y>0 \}$ opremimo z metriko
+\begin{equation}\label{eq:K^n metrika}
+\u g_{R}^{4} = R^2 \frac{(dx^{1})^2 + \cdots + (dx^{n-1})^2 + dy^2}{y^2}.
+\end{equation}
+Mnogoterosti $(\mathbb{U}^{n}(R), \u g_{R}^{4})$ pravimo \emph{Poincar\'ejev polprostor}.
+
+%
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hiperbolična geometrija
+\section{Hiperbolična geometrija}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Literatura
+
+\begin{thebibliography}{99}
+
+\end{thebibliography}
+
+\end{document}
