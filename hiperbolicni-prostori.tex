@@ -195,7 +195,7 @@ c^{-1}(y) = \left( \frac{Ry}{(R^2-|y|^2)^{1/2}}, \frac{R^2}{(R^2-|y|^2)^{1/2}} \
 definira gladko preslikavo, ki je inverz centralne projekcije.
 
 Nazadnje dokažimo, da je $c$ izometrija. Želimo videti, da velja enakost $(c^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{2}$.
-Diferenciala točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ sta enaka
+Diferenciali točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ so enaki
 \begin{gather*}
 dx^{i} = \frac{Rdy^{i}}{(R^2-|y|^2)^{1/2}} + \frac{Ry^{i} \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}, \\
 d\tau = \frac{R^2 \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}.
@@ -212,7 +212,7 @@ Naj bo $S=(0, \dots , -R) \in \mathbb{R}^{n,1}$ in izberimo poljubno točko $T=(
 Sedaj bomo izračunali predpis, ki definira preslikavo $h$.
 Po konstrukciji točke $V$ obstaja enoličen $\lambda>0$, ki zadošča enakosti $V-S=\lambda(T-S)$. Ekvivalentno lahko po komponentah zapišemo
 \begin{align*}
-v^{i} &= \lambda x^{i}, \quad  i=1, \dots n & R &= \lambda(\tau+R),
+v^{i} &= \lambda x^{i}, \quad  i=1, \dots n, & R &= \lambda(\tau+R),
 \end{align*}
 od koder izračunamo koeficient $\lambda = \frac{R}{\tau+R}$. Formula, ki določa $h$, je enaka
 \begin{equation}\label{eq: hip-ster-proj}
@@ -224,9 +224,9 @@ zato preslikava $h$ res slika v Poincar\'ejevo kroglo $\mathbb{B}^{n}(R)$.
 
 Konstruirajmo inverz preslikave. Komponente točke $T \in \mathbb{H}^{n}(R)$ se v odvisnosti od koeficienta $\lambda$ izražajo kot
 \begin{align*}
-x^{i} &= \frac{v^{i}}{\lambda}, \quad  i=1, \dots n & \tau &= R \frac{1-\lambda}{\lambda}.
+x^{i} &= \frac{v^{i}}{\lambda}, \quad  i=1, \dots n, & \tau &= R \frac{1-\lambda}{\lambda}.
 \end{align*}
-To vstavimo v pogoj za točko na hiperboloidu $|x|^2-\tau^2=-R^2$, kar nam da $\lambda = \frac{R^2-|v|^2}{2R^2}$.
+To vstavimo v pogoj za točko na hiperboloidu, $|x|^2-\tau^2=-R^2$, kar nam da $\lambda = \frac{R^2-|v|^2}{2R^2}$.
 Inverzna preslikava ima potem predpis
 \begin{equation}\label{eq:h^{-1}}
 h^{-1}(v) = \left( \frac{2R^2v}{R^2-|v|^2}, R \frac{R^2+|v|^2}{R^2-|v|^2} \right).
@@ -234,7 +234,7 @@ h^{-1}(v) = \left( \frac{2R^2v}{R^2-|v|^2}, R \frac{R^2+|v|^2}{R^2-|v|^2} \right
 Gladek inverz nam zagotavlja, da je hiperbolična stereografska projekcija difeomorfizem.
 
 Podobno kot v prejšnjem primeru preverimo še enakost $(h^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{3}$.
-Diferenciali komponent točke $(x,\tau)=h^{-1}(v)$ so
+Diferenciali komponent točke $(x,\tau)=h^{-1}(v)$ iz predpisa~\ref{eq:h^{-1}} so
 \begin{gather*}
 dx^{i} = \frac{2R^2dv^{i}}{R^2-|v|^2} + \frac{4R^2v^{i} \sum_{k=1}^{n}v^{k}dv^{k}}{(R^2-|v|^2)^2}, \\
 d\tau = \frac{2R \sum_{k=1}^{n}v^{k}dv^{k}}{R^2-|v|^2} + \frac{2R(R^2+|v|^2) \sum_{k=1}^{n}v^{k}dv^{k}}{(R^2-|v|^2)^2}.
@@ -243,7 +243,24 @@ Z nekaj računanja dobimo
 \[ (h^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = \u g_{R}^{3}. \]
 Pokazali smo, da je hiperbolična stereografska projekcija izometrija prostorov $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{B}^{n}(R), \u g_{R}^{3})$.
 
+% Cayleyjeva transformacija
 \subsubsection{Posplošena Cayleyjeva transformacija}
+Omenimo še konstrukcijo izometrije med Poincar\'ejevo polravnino in Poincar\'ejevo kroglo. 
+V dvodimenzionalnem primeru smo v domači nalogi videli, da izometrijo med Poincar\'ejevo polravnino $\mathbb{U}$ in Poincar\'ejevim diskom $\mathbb{D}$ (za $R=1$) podaja M\"obiusova transformacija $\tau \colon \mathbb{U} \to \mathbb{D}$, definirana s predpisom
+\begin{equation}
+\tau(z) = \frac{1+iz}{z+i},
+\end{equation} 
+kjer je $z=(x,y)$ kompleksen zapis točke v ravnini. S skaliranjem dobimo predpis za preslikavo $k \colon \mathbb{U}^{2}(R) \to \mathbb{B}^{2}(R)$,
+\begin{equation}
+k(z) = iR \frac{z-iR}{z+iR}.
+\end{equation} 
+Če preidemo v realne koordinate z identifikacijo $\Re{z}=x$, $\Im{z}=y$, kratek račun pokaže ekvivalenten predpis
+\begin{equation}
+k(x,y) = \left( \frac{2xR^2}{x^2+(y+R)^2}, R \frac{x^2+y^2-R^2}{x^2+(y+R)^2} \right).
+\end{equation}
+Preslikavi $k$ pravimo \emph{Cayleyjeva transformacija}.
+
+V splošnem primeru koordinate na Poincar\'ejevem polprostoru $\mathbb{U}^{n}(R)$ zapišimo kot $(x^{1}, \dots , x^{n}, y) = (x,y)$ in uporabimo zgornji predpis. Novo preslikavo, ki je prav tako izometrija, imenujemo \emph{posplošena Cayleyjeva transformacija}.
 
 %%%%%%%%%%%%%%%%%%%
 % Lastnosti hiperboličnih prostorov
