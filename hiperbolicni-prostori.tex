@@ -102,7 +102,7 @@ Naj bo $n \geq 1$ in izberimo $R>0$.
 Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
 
 \begin{primer}
-4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poncar\'ejeva grupa} sestavljajo $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in tri "time boosts" (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
+4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poncar\'ejeva grupa} sestavlja $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in tri "time boosts" (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
 \end{primer}
 
 Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboličnega prostora dimenzije $n$ in polmera $R$.
@@ -153,7 +153,7 @@ Mnogoterosti $(\mathbb{U}^{n}(R), \u g_{R}^{4})$ pravimo \emph{Poincar\'ejev pol
 \end{enumerate}
 %%%%%%%%%%
 
-Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije $n$ s polmerom $R$ označimo z $\mathbb{H}^{n}(R)$, metriko pa z $\u g_{R}$, pri čemer imamo v mislih poljubnega izmed modelov. Če za polmer izberemo $R=1$, Riemannovo mnogoterost označimo z $(\mathbb{H}^{n}, \u g)$ in imenujemo \emph{hiperbolični prostor} dimenzije $n$. V dveh dimenzijah dobimo \emph{hiperbolično ravnino}, h kateri se bomo vrnili kasneje.
+Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije $n$ s polmerom $R$ označimo z $\mathbb{H}^{n}(R)$, metriko pa z $\u g_{R}$, pri čemer imamo v mislih poljubnega izmed modelov. Če za polmer izberemo $R=1$, Riemannovo mnogoterost označimo s $(\mathbb{H}^{n}, \u g)$ in imenujemo \emph{hiperbolični prostor} dimenzije $n$. V dveh dimenzijah dobimo \emph{hiperbolično ravnino}, h kateri se bomo vrnili kasneje.
 
 %%%%%%%%%%%%%%%%%%%
 % Izometričnost modelov
@@ -163,7 +163,7 @@ Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije 
 Modeli $n$-dimenzionalnih hiperboličnih prostorov s polmerom $R$ so paroma izometrični.
 \end{izrek}
 
-Dokaz bo potekal v več korakih. Najprej moramo preveriti, da je hiperbolični prostor Riemannova mnogoterost. Nato bomo konstruirali izometrije med naslednjimi pari modelov: hiperboloidom in Beltrami-Kleinovim modelom, hiperboloidom in Poincar\'ejevo kroglo ter Poincar\'ejevim polprostorom in Poincar\'ejevo kroglo.
+Dokaz bo potekal v več korakih. Najprej bomo preverili, da je hiperbolični prostor Riemannova mnogoterost. Nato bomo konstruirali izometrije med naslednjimi pari modelov: hiperboloidom in Beltrami-Kleinovim modelom, hiperboloidom in Poincar\'ejevo kroglo ter Poincar\'ejevim polprostorom in Poincar\'ejevo kroglo.
 
 Dokažimo najprej, da je hiperboloid $\mathbb{H}^{n}(R)$ Riemannova podmnogoterost prostora $\mathbb{R}^{n,1}$. To zadostuje, saj bo iz izometričnosti sledilo, da so vsi modeli Riemannove mnogoterosti.
 Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot 
@@ -173,6 +173,7 @@ Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot
 kjer je preslikava $F \colon \mathbb{R}^{n+1} \to \mathbb{R}$ definirana s predpisom $F(x^{1}, \dots , x^{n}, \tau) = \sum_{i=1}^{n} (x^{i})^2 - \tau^2$.
 Tangentni prostor v točki $p \in \mathbb{H}^{n}(R)$, ki je enak $T_{p}\mathbb{H}^{n}(R) = \ker dF_{p}$, razpenjajo vektorji $X^{i} = \tau \frac{\partial}{\partial x^{i}} + x^{i} \frac{\partial}{\partial \tau}$ za $i = 1, \dots , n$. Ker je njihov produkt (glede na metriko $\bar{q}$) pozitiven, je metrika $\u g_{R}^{1}$ pozitivno definitna in določa Riemannovo podmnogoterost $(\mathbb{H}^{n}(R), \u g_{R}^{1})$. 
 
+% Centralna projekcija
 \subsubsection{Centralna projekcija}
 Izometrija med hiperboloidom in Beltrami-Kleinovim modelom se imenuje \emph{centralna projekcija}, $c \colon \mathbb{H}^{n}(R) \to \mathbb{K}^{n}(R)$.
 
@@ -181,9 +182,9 @@ Tedaj se koordinate točke $Y$ izražajo s koordinatami $T$, natančneje, $Y=\fr
 \begin{equation}\label{eq: cent-proj}
 c(x, \tau) = \frac{R}{\tau} x.
 \end{equation}
-Ker je slika s preslikavo $c$ točka na hiperboloidu, velja
+Ker slika točke s preslikavo $c$ leži na hiperboloidu, velja
 \[ |c(x,\tau)|^2 = \frac{R^2}{\tau^2} |x|^2 = \frac{R^2}{\tau^2}(\tau^2-R^2) = R^2 \left(1-\frac{R^2}{\tau^2} \right) < R^2, \]
-torej je $c(x, \tau) \in \mathbb{K}^{n}(R)$ in centralna projekcija je dobro definirana.
+torej je $c(x, \tau) \in \mathbb{K}^{n}(R)$ in je centralna projekcija dobro definirana.
 
 Da je preslikava $c$ difeomorfizem, bomo pokazali s konstrukcijo njenega inverza.
 Vzemimo poljubno točko $y \in \mathbb{K}^{n}(R)$. Potem obstaja enoličen $\lambda>0$, da velja $(x, \tau) = \lambda (y,R) \in \mathbb{H}^{n}(R)$. Slednja točka je določena z zvezo $\lambda^2 (|y|^2-R^2)=-R^2$, od koder sledi $\lambda = \frac{R}{(R^2-|y|^2)^{1/2}}$.
@@ -195,13 +196,52 @@ definira gladko preslikavo, ki je inverz centralne projekcije.
 
 Nazadnje dokažimo, da je $c$ izometrija. Želimo videti, da velja enakost $(c^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{2}$.
 Diferenciala točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ sta enaka
-\[ dx^{i} = \frac{Rdy^{k}}{(R^2-|y|^2)^{1/2}} + \frac{Ry^{i} \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}, \]
-\[ d\tau = \frac{R^2 \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}. \]
+\begin{gather*}
+dx^{i} = \frac{Rdy^{i}}{(R^2-|y|^2)^{1/2}} + \frac{Ry^{i} \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}, \\
+d\tau = \frac{R^2 \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}.
+\end{gather*}
 Od tod izračunamo
 \[ (c^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = R^2 \frac{\sum_{i=1}^{n}(dy^{i})^2}{R^2-|y|^2} + R^2 \frac{(\sum_{i=1}^{n}y^{i}dy^{i})^2}{(R^2-|y|^2)^2} = \u g_{R}^{2}. \]
 Torej je centralna projekcija res izometrija med $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{K}^{n}(R), \u g_{R}^{2})$.
 
+% Hiperbolična stereografska projekcija
 \subsubsection{Hiperbolična stereografska projekcija}
+Izometriji med hiperboloidom in Poincar\'ejevo kroglo pravimo \emph{hiperbolična stereografska projekcija}, $h \colon \mathbb{H}^{n}(R) \to \mathbb{B}^{n}(R)$. Spominja na običajno stereografsko projekcijo za sfere, zato je tudi njena konstrukcija podobna le-tej.
+
+Naj bo $S=(0, \dots , -R) \in \mathbb{R}^{n,1}$ in izberimo poljubno točko $T=(x^{1}, \dots , x^{n}, \tau)$ na hiperboloidu. Označimo presečišče premice $ST$ s hiperravnino $\{ (x, \tau); \ \tau=0 \}$ z $V=(v,0) \in \mathbb{R}^{n,1}$ in postavimo $h(T)=v \in \mathbb{B}^{n}(R)$.
+Sedaj bomo izračunali predpis, ki definira preslikavo $h$.
+Po konstrukciji točke $V$ obstaja enoličen $\lambda>0$, ki zadošča enakosti $V-S=\lambda(T-S)$. Ekvivalentno lahko po komponentah zapišemo
+\begin{align*}
+v^{i} &= \lambda x^{i}, \quad  i=1, \dots n & R &= \lambda(\tau+R),
+\end{align*}
+od koder izračunamo koeficient $\lambda = \frac{R}{\tau+R}$. Formula, ki določa $h$, je enaka
+\begin{equation}\label{eq: hip-ster-proj}
+h(x,\tau) = \frac{R}{\tau+R}x.
+\end{equation}
+Ker točka $(x,\tau)$ leži na hiperboloidu, ocenimo
+\[ |h(x,\tau)|^2 = \frac{R^2}{(\tau+R)^2} |x|^2 = R^2 \frac{\tau^2-R^2}{\tau^2+R^2} < R^2, \]
+zato preslikava $h$ res slika v Poincar\'ejevo kroglo $\mathbb{B}^{n}(R)$.
+
+Konstruirajmo inverz preslikave. Komponente točke $T \in \mathbb{H}^{n}(R)$ se v odvisnosti od koeficienta $\lambda$ izražajo kot
+\begin{align*}
+x^{i} &= \frac{v^{i}}{\lambda}, \quad  i=1, \dots n & \tau &= R \frac{1-\lambda}{\lambda}.
+\end{align*}
+To vstavimo v pogoj za točko na hiperboloidu $|x|^2-\tau^2=-R^2$, kar nam da $\lambda = \frac{R^2-|v|^2}{2R^2}$.
+Inverzna preslikava ima potem predpis
+\begin{equation}\label{eq:h^{-1}}
+h^{-1}(v) = \left( \frac{2R^2v}{R^2-|v|^2}, R \frac{R^2+|v|^2}{R^2-|v|^2} \right).
+\end{equation} 
+Gladek inverz nam zagotavlja, da je hiperbolična stereografska projekcija difeomorfizem.
+
+Podobno kot v prejšnjem primeru preverimo še enakost $(h^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{3}$.
+Diferenciali komponent točke $(x,\tau)=h^{-1}(v)$ so
+\begin{gather*}
+dx^{i} = \frac{2R^2dv^{i}}{R^2-|v|^2} + \frac{4R^2v^{i} \sum_{k=1}^{n}v^{k}dv^{k}}{(R^2-|v|^2)^2}, \\
+d\tau = \frac{2R \sum_{k=1}^{n}v^{k}dv^{k}}{R^2-|v|^2} + \frac{2R(R^2+|v|^2) \sum_{k=1}^{n}v^{k}dv^{k}}{(R^2-|v|^2)^2}.
+\end{gather*}
+Z nekaj računanja dobimo
+\[ (h^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = \u g_{R}^{3}. \]
+Pokazali smo, da je hiperbolična stereografska projekcija izometrija prostorov $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{B}^{n}(R), \u g_{R}^{3})$.
 
 \subsubsection{Posplošena Cayleyjeva transformacija}
 
