@@ -280,7 +280,7 @@ Naj bo $\mathbb{R}^{n,1}$ prostor Minkowskega ($n \geq 1$) opremljen z metriko M
 Njeno podgrupo, ki ohranja hiperboloid $\mathbb{H}^{n}(R)$ označimo z $\textup{O}^{+}(n,1)$. Pravimo ji \emph{ortokrona Lorentzova grupa}.
 \end{definicija}
 
-\begin{trditev}
+\begin{trditev} \label{trd: frame-homo}
 Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je "frame homogeneous".
 \end{trditev}
 
@@ -299,6 +299,48 @@ Potem je množica $\{ e_{1}, \dots , e_{n}, \bar{p} \}$ ortonormirana baza prost
 Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po konstrukciji velja $M \in \textup{O}^{+}(n,1)$ in $M$ slika $\{\partial_{1}, \dots , \partial_{n+1} \}$ v $\{e_{1}, \dots , e_{n}, \bar{p} \}$ ter $N$ v $p$.
 Ker je $M$ kot preslikava linearna na $\mathbb{R}^{n,1}$, je njen diferencial v točki $N$, $dM_{N} \colon T_{N}\mathbb{R}^{n,1} \to T_{p}\mathbb{R}^{n,1}$, prav tako predstavljen z matriko $M$. To pa pomeni, da je $dM_{n}(\partial_{i}) = e_{i}$, $i = 1, \dots , n$.
 $M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ frame homogeneous.
+
+%%%%%%%%%%%%%%%%%%%
+% Geodetke na hiperboličnih prostorih
+\subsection{Geodetke na hiperbolčnih prostorih}
+
+\begin{izrek}
+Maksimalne geodetke na hiperboličnem prostoru so natanko
+\begin{enumerate}
+\item glavne hiperbole, natančneje, preseki $\mathbb{H}^{n}(R)$ z ravnino v $\mathbb{R}^{n,1}$, če je prostor \textup{hiperboloid} $\mathbb{H}^{n}(R)$;
+%
+\item premice v notranjosti $\mathbb{K}^{n}(R)$ v \textup{Beltrami-Kleinovem modelu} $\mathbb{K}^{n}(R)$;
+%
+\item premeri krogle $\mathbb{B}^{n}(R)$ ali deli krožnic v notranjosti krogle, ki rob $\partial\mathbb{B}^{n}(R)$ sekajo pod pravim kotom, v primeru \textup{Poincar\'ejeve krogle} $\mathbb{B}^{n}(R)$;
+%
+\item premice, vzporedne $\tau$-osi, ali polkrožnice s središči na robu $\partial\mathbb{U}^{n}(R)$, kadar je model \textup{Poincar\'ejev polprostor} $\mathbb{U}^{n}(R)$.
+\end{enumerate}
+\end{izrek}
+
+Dokaz:
+Najprej bomo obravnavali model hiperboloida $\mathbb{H}^{n}(R)$.
+Opazimo, da je na hiperboloidu tangentna komponenta "povezave" $\nabla^{\perp}$ enaka Levi-Civita, saj je $\mathbb{H}^{n}(R)$ vložena podmnogoterost v $\mathbb{R}^{n,1}$.
+Geodetke na hiperboloidu zato lahko karakteriziramo z naslednjim pogojem: krivulja $\gamma \colon I \subset \mathbb{R} \to \mathbb{H}^{n}(R)$ je geodetka natanko tedaj, ko je za vse $t$ vektor $\gamma''(t)$ pravokoten na tangentni prostor $T_{\gamma(t)}\mathbb{H}^{n}(R)$ glede na metriko Minkowskega $\bar{q}$.
+
+Vzemimo poljubno točko $p \in \mathbb{H}^{n}(R)$ in jo kot v dokazu trditve~\ref{trd: frame-homo} identificirajmo z vektorjem dolžine $R$ v $T_{p}\mathbb{R}^{n,1}$. Naj bo $F$ funkcija, ki definira hiperboloid (enakost~\ref{eq:H^n enacba}).
+Opisati želimo elemente tangentnega prostora $T_{p}\mathbb{H}^{n}(R)$. Ker velja $\textup{grad}F|_{p}=2\cdot p$, neničelni vektor $v$ zadošča $v \in T_{p}\mathbb{H}^{n}(R)$ natanko takrat, ko je $\bar{q}(p,v)=0$ (vektorja $p$ in $v$ sta pravokotna glede na metriko $\bar{q}$).
+
+Izberimo $v \in T_{p}\mathbb{H}^{n}(R)$ ter postavimo $a=\frac{|v|_{\bar{q}}}{R}$ in $\bar{v}=\frac{v}{a}$ (tj.~$|\bar{v}|=R$).
+Definirajmo gladko krivuljo $\gamma \colon \mathbb{R} \to \mathbb{R}^{n,1}$ s predpisom
+\[ \gamma(t) = \cosh(at) \cdot p + \sinh(at) \cdot \bar{v}. \]
+Krivulja leži na hiperboloidu, saj velja $ |\sinh(at) \cdot \bar{v}|^2 - |\cosh(at) \cdot p|^2 = -R^2$. Nadalje je 
+\begin{gather*}
+\gamma'(t) = a\sinh(at) \cdot p + a\cosh(at) \cdot \bar{v}, \\
+\gamma''(t) = a^2\cosh(at) \cdot p + a^2\sinh(at) \cdot \bar{v} = a^2 \gamma(t), \\
+\bar{q}(\gamma'(t), \gamma''(t)) = 0,
+\end{gather*}
+od koder sledi, da je krivulja $\gamma$ geodetka v $\mathbb{H}^{n}(R)$.
+Veljata še začetna pogoja $\gamma(0)=p$ in $\gamma'(0)=a\bar{v}=v$, zato je $\gamma = \gamma_{v}$ konstantne hitrosti $a$.
+Krivulja $\gamma_{v}$ je gladka vložitev $\mathbb{R} \to \mathbb{H}^{n}(R)$, katere slika je glavna hiperbola (ravnino, ki seka hiperboloid, razpenjata vektorja $p, \ \bar{v}$).
+
+Naj bo $\Sigma \subset \mathbb{R}^{n,1}$ taka ravnina z ortonormirano bazo $\{v,p\}$, da je njen presek s hiperboloidom $\mathbb{H}^{n}(R)$ glavna hiperbola $H$. Potem je $H$ slika geodetke z začetno točko $p$ (točka $p$ in pripadajoč vektor sta identificirana) in začetno hitrostjo $v$.
+
+Dokazali smo, da so geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hiperbolična geometrija
