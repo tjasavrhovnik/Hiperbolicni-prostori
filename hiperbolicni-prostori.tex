@@ -311,9 +311,16 @@ $M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zat
 % Ukrivljenost
 \subsection{Ukrivljenost}
 
+Gaussova ukrivljenost $\kappa$ ploskve v točki je po definiciji enaka produktu glavnih ukrivljenosti v tej točki. 
+Ničelna Gaussova ukrivljenost karakterizira ploskve, ki so lokalno izomorfne ravnini.
+Ploskve s pozitivno Gaussovo ukrivljenostjo v točki imajo lastnost, da sta glavni ukrivljenosti v točki istega predznaka (odvisni od izbora normale). Primer take ploskve je 2-sfera $\mathbb{S}^{2}(R)$ polmera $R$, za katero velja $\kappa = 1/R^2$. 
+Negativna Gaussova ukrivljenost pa pomeni, da vektorja glavnih ukrivljenosti kažeta v nasprotno smer. Geometrijsko ima ploskev v taki točki obliko sedla. 
+
+Za študij so posebej zanimive ploskve s konstantno Gaussovo ukrivljenostjo. Najprej si oglejmo primer.
+
 % Primer - traktoid
 \begin{primer}[Traktoid]
-Oglejmo si primer ploskve, vložene v $\mathbb{R}^{3}$, in izračunajmo njeno Gaussovo ukrivljenost.
+Opazujmo ploskev, vloženo v $\mathbb{R}^{3}$, in izračunajmo njeno Gaussovo ukrivljenost.
 Defnirajmo preslikavi
 \begin{align*}
 f &\colon (0,1) \to \mathbb{R}, &f(r) &= \sqrt{1-r^2} - \cosh ^{-1} \left(\frac{1}{r} \right); \\
@@ -337,8 +344,22 @@ Po formuli za Gaussovo ukrivljenost končno dobimo
 \begin{gather*}
 \kappa = \frac{LN-M^2}{EG-F^2} = -1.
 \end{gather*}
-Traktoid je ploskev s konstantno negativno Gaussovo ukrivljenostjo in je primer hiperbolične ploskve.
 \end{primer}
+
+Traktoid ima konstantno negativno Gaussovo ukrivljenost in spada med hiperbolične ploskve. S ploskev, tj.~dvodimenzionalnih prostorov, lahko preidemo na prostore poljubnih dimenzij. V razredu smo izračunali Gaussovo ukrivljenost hiperboloida $\mathbb{H}^{n}(R)$, ki je enaka 
+\begin{gather}
+\kappa (\mathbb{H}^{n}(R)) = \left(-\frac{1}{iR} \right)^n.
+\end{gather}
+ Za fiksen izbor števil $n \in \mathbb{N}, \ R>0$ je $\kappa = \mbox{konst.}<0$. Ker je $\mathbb{H}^{n}(R)$ model hiperboličnega prostora dimenzije $n$ in polmera $R$, ter so vsi modeli med seboj izometrični, ima vsak hiperbolični prostor konstantno negativno Gaussovo ukrivljenost. Velja tudi $\textup{sec}(\mathbb{H}^{n}(R)) = -1/R^2$, kjer $\textup{sec}$ označuje "prerezno" ukrivljenost. Za poljubne $R>0$ dobimo vse možne vrednosti konstantno negativne prerezne ukrivljenosti, ki ustrezajo hiperboličnim prostorom polmera $R$.
+
+Naslednji rezultat bomo le navedli brez dokaza. Pomemben in zanimiv je zato, ker klasificira Riemannove mnogoterosti glede na njihovo prerezno ukrivljenost.
+
+\begin{izrek}[Killing-Hopf]
+Naj bo $n \geq 2$ in $(M,g)$ kompletna~\footnote{Riemannova mnogoterost je \emph{kompletna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
+Riemannova mnogoterost dimenzije $n$ s konstantno prerezno ukrivljenostjo. Potem je $M$ izometrična natanko enemu izmed prostorov: Evklidskemu prostoru $\mathbb{R}^{n}$, $n$-sferi $\mathbb{S}^{n}(R)$ ali hiperboličnemu prostoru $\mathbb{H}^{n}(R)$.
+\end{izrek}
+
+Ker po zgornjih ugotovitvah vemo, da imajo hiperbolični prostori konstantno negativno prerezno ukrivljenost, bi model hiperboličnega prostora lahko definirali kot kompletno enostavno povezano Riemannovo mnogoterost s konstantno negativno prerezno ukrivljenostjo.
 
 %%%%%%%%%%%%%%%%%%%
 % Geodetke na hiperboličnih prostorih

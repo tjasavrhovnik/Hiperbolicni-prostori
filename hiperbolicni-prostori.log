@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  12 JUN 2021 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  12 JUN 2021 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,49 +399,49 @@ LaTeX Warning: Command \u invalid in math mode on input line 273.
 LaTeX Warning: Command \u invalid in math mode on input line 278.
 
 [8]
-Overfull \hbox (34.50595pt too wide) detected at line 330
+Overfull \hbox (34.50595pt too wide) detected at line 337
 []
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 384--385
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 401--403
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 434.
+LaTeX Warning: Empty `thebibliography' environment on input line 455.
 
-[11] [12] (./hiperbolicni-prostori.aux)
+[12] (./hiperbolicni-prostori.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3684 strings out of 478846
- 49408 string characters out of 5859791
+ 3687 strings out of 478846
+ 49444 string characters out of 5859791
  366896 words of memory out of 5000000
- 21249 multiletter control sequences out of 15000+600000
- 506937 words of font info for 82 fonts, out of 8000000 for 9000
+ 21251 multiletter control sequences out of 15000+600000
+ 511201 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,1035b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021
-/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/
-dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/
+dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 }{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2021/
 texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/t
 ype1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmc
@@ -455,15 +455,15 @@ lic/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:
 /texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2021/texmf-
 dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/pub
 lic/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c
-:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/tex
-mf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1
-/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on hiperbolicni-prostori.pdf (12 pages, 345515 bytes).
+:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/texlive/2021/texm
+f-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1
+/public/lm/lmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pf
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c
+:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hiperbolicni-prostori.pdf (12 pages, 364130 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 145 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
