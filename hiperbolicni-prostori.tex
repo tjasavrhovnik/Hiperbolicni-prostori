@@ -15,6 +15,9 @@
 \newtheorem{posledica}{Posledica}
 \newtheorem{primer}{Primer}
 
+\def\qed{$\hfill\Box$}   % konec dokaza
+\def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
+
 \begin{document}
 
 \title{\Huge\textbf{Hiperbolični prostori}} 
@@ -270,8 +273,10 @@ V splošnem primeru koordinate na Poincar\'ejevem polprostoru $\mathbb{U}^{n}(R)
 Hiperbolični prostor $(\mathbb{H}^{n}(R), \u g)$ je lokalno konformno ploščat.
 \end{trditev}
 
-Dokaz:
+\noindent
+{\em Dokaz:\/} 
 Za model hiperboličnega prostora vzemimo Poincar\'ejevo kroglo  $\mathbb{B}^{n}(R)$. Identična preslikava $id \colon (\mathbb{B}^{n}(R), \u g_{R}^{3}) \to (\mathbb{R}^{n}, \bar{g})$ je konformna in porodi konformno ekvivalenco Poincar\'ejeve krogle z odprto podmnožico Evklidskega prostora. Zaradi izometričnosti modelov sledi, da je hiperbolični prostor lokalno konformno ploščat.
+\qed
 
 % Lorentzova grupa
 \begin{definicija}
@@ -284,7 +289,8 @@ Njeno podgrupo, ki ohranja hiperboloid $\mathbb{H}^{n}(R)$ označimo z $\textup{
 Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je "frame homogeneous".
 \end{trditev}
 
-Dokaz:
+\noindent
+{\em Dokaz:\/} 
 Dovolj je pokazati, da za poljubno točko $p \in \mathbb{H}^{n}(R)$ in ortonormirano bazo $\{e_{1}, \dots , e_{n} \}$ prostora $T_{p}\mathbb{H}^{n}(R)$ obstaja ortogonalna preslikava, ki preslika točko $N=(0, \dots , 0, R)$ v $p$ ter ortonormirano bazo $\{\partial_{1}, \dots , \partial_{n} \}$ za $T_{N}\mathbb{H}^{n}(R)$ v bazo $\{e_{i}\}_{i}$.
 
 Naj bo $p \in \mathbb{H}^{n}(R)$ poljubna točka. Identificirajmo $p$ z vektorjem dolžine $R$ v $T_{p}\mathbb{R}^{n,1}$  in postavimo $\bar{p} = \frac{p}{R}$. $\bar{p}$ je enotski vektor glede na metriko Minkowskega $\bar{q}$, kaže v smeri $p$, in $\bar{p} \in T_{p}\mathbb{R}^{n,1}$.
@@ -299,6 +305,40 @@ Potem je množica $\{ e_{1}, \dots , e_{n}, \bar{p} \}$ ortonormirana baza prost
 Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po konstrukciji velja $M \in \textup{O}^{+}(n,1)$ in $M$ slika $\{\partial_{1}, \dots , \partial_{n+1} \}$ v $\{e_{1}, \dots , e_{n}, \bar{p} \}$ ter $N$ v $p$.
 Ker je $M$ kot preslikava linearna na $\mathbb{R}^{n,1}$, je njen diferencial v točki $N$, $dM_{N} \colon T_{N}\mathbb{R}^{n,1} \to T_{p}\mathbb{R}^{n,1}$, prav tako predstavljen z matriko $M$. To pa pomeni, da je $dM_{n}(\partial_{i}) = e_{i}$, $i = 1, \dots , n$.
 $M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ frame homogeneous.
+\qed
+
+%%%%%%%%%%%%%%%%%%%
+% Ukrivljenost
+\subsection{Ukrivljenost}
+
+% Primer - traktoid
+\begin{primer}[Traktoid]
+Oglejmo si primer ploskve, vložene v $\mathbb{R}^{3}$, in izračunajmo njeno Gaussovo ukrivljenost.
+Defnirajmo preslikavi
+\begin{align*}
+f &\colon (0,1) \to \mathbb{R}, &f(r) &= \sqrt{1-r^2} - \cosh ^{-1} \left(\frac{1}{r} \right); \\
+\sigma &\colon (0,1) \times (0,2\pi) \to \mathbb{R}^{3}, &\sigma(r,v) &= (r \cos{v}, r \sin{v}, f(r)).
+\end{align*}
+Preslikava $\sigma$ je parametrizacija rotacijske ploskve, ki jo imenujemo \emph{traktoid}.
+
+Izračunajmo prvo in drugo fundamentalno formo ploskve.
+\begin{gather*}
+\sigma_{r} = \left(\cos{v}, \sin{v}, \frac{\sqrt{1-r^2}}{r} \right), \  \sigma_{v} = \left(-r \sin{v}, r \cos{v}, 0 \right), \\
+\sigma_{rr} = \left(0, 0, -\frac{1}{r^2 \sqrt{1-r^2}} \right), \  \sigma_{rv} = \sigma_{vr} = (-\sin{v}, \cos{v}, 0), \  \sigma_{vv} = (-r\cos{v}, -r\sin{v}, 0), \\
+\sigma_{r} \times \sigma_{v} = \left(-\sqrt{1-r^2}\cos{v}, -\sqrt{1-r^2}\sin{v}, r \right), \  ||\sigma_{r} \times \sigma_{v}|| = 1, \\
+n = -\frac{\sigma_{r} \times \sigma_{v}}{||\sigma_{r} \times \sigma_{v}||} = \left(\sqrt{1-r^2}\cos{v}, \sqrt{1-r^2}\sin{v}, -r \right),
+\end{gather*}
+kjer je $n$ zunanja normala ploskve. Iz parcialnih odvodov izračunamo koeficiente
+\begin{gather*}
+E = \sigma_{r} \cdot \sigma_{r} = \frac{1}{r^2}, \ F = \sigma_{r} \cdot \sigma_{v} = 0, \ G = \sigma_{v} \cdot \sigma_{v} = r^2, \\
+L = \sigma_{rr} \cdot n = \frac{1}{r\sqrt{1-r^2}}, \ M = \sigma_{rv} \cdot n = 0, \ N = \sigma_{vv} \cdot n = -r\sqrt{1-r^2}.
+\end{gather*}
+Po formuli za Gaussovo ukrivljenost končno dobimo
+\begin{gather*}
+\kappa = \frac{LN-M^2}{EG-F^2} = -1.
+\end{gather*}
+Traktoid je ploskev s konstantno negativno Gaussovo ukrivljenostjo in je primer hiperbolične ploskve.
+\end{primer}
 
 %%%%%%%%%%%%%%%%%%%
 % Geodetke na hiperboličnih prostorih
@@ -311,14 +351,15 @@ Maksimalne geodetke na hiperboličnem prostoru so natanko
 %
 \item premice v notranjosti $\mathbb{K}^{n}(R)$ v \textup{Beltrami-Kleinovem modelu} $\mathbb{K}^{n}(R)$;
 %
-\item premeri krogle $\mathbb{B}^{n}(R)$ ali deli krožnic v notranjosti krogle, ki rob $\partial\mathbb{B}^{n}(R)$ sekajo pod pravim kotom, v primeru \textup{Poincar\'ejeve krogle} $\mathbb{B}^{n}(R)$;
+\item premeri krogle $\mathbb{B}^{n}(R)$ ali krožni loki v notranjosti krogle, ki rob $\partial\mathbb{B}^{n}(R)$ sekajo pod pravim kotom, v primeru \textup{Poincar\'ejeve krogle} $\mathbb{B}^{n}(R)$;
 %
 \item premice, vzporedne $\tau$-osi, ali polkrožnice s središči na robu $\partial\mathbb{U}^{n}(R)$, kadar je model \textup{Poincar\'ejev polprostor} $\mathbb{U}^{n}(R)$.
 \end{enumerate}
 \end{izrek}
 
 % dokaz geodetk
-Dokaz:
+\noindent
+{\em Dokaz:\/}
 % hiperboloid
 Najprej bomo obravnavali model hiperboloida $\mathbb{H}^{n}(R)$.
 Opazimo, da je na hiperboloidu tangentna komponenta "povezave" $\nabla^{\perp}$ enaka Levi-Civita, saj je $\mathbb{H}^{n}(R)$ vložena podmnogoterost v $\mathbb{R}^{n,1}$.
@@ -342,7 +383,7 @@ Krivulja $\gamma_{v}$ je gladka vložitev $\mathbb{R} \to \mathbb{H}^{n}(R)$, ka
 
 Naj bo $\Sigma \subset \mathbb{R}^{n,1}$ taka ravnina z ortonormirano bazo $\{v,p\}$, da je njen presek s hiperboloidom $\mathbb{H}^{n}(R)$ glavna hiperbola $H$. Potem je $H$ slika geodetke z začetno točko $p$ (točka $p$ in pripadajoč vektor sta identificirana) in začetno hitrostjo $v$.\newline
 
-Dokazali smo, da so geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.\newline
+Dokazali smo, da so maksimalne geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.\newline
 
 % Beltrami-Kleinov model
 Oglejmo si Beltrami-Kleinov model. Vemo, da izometrijo med hiperboloidom in Beltrami-Kleinovim modelom definira predpis $c \colon \mathbb{H}^{n}(R) \to \mathbb{K}^{n}(R)$, $c(x,\tau) = \frac{R}{\tau}x$. Iz zgornjega vemo še, da je slika maksimalne geodetke na hiperboloidu glavna hiperbola.
@@ -358,26 +399,28 @@ ko za njeno sliko $c(x,\tau)=y$ velja
 \begin{gather}\label{eq: af-pog}
 \lambda_{i}y^{i} + \mu R = 0, \ i=1, \dots , n.
 \end{gather}
-Sledi, da preslikava $c$ glavno hiperbolo preslika v presek $\mathbb{K}^{n}(R)$ in afinega podprostora v $\mathbb{R}^{n}$ (tega določa~\ref{eq: af-pog}). Slika gladke krivulje z izometrijo $c$ je gladka krivulja, zato je slika glavne hiperbole, geodetka, premica v Klein-Beltramijevem modelu $\mathbb{K}^{n}(R)$.\newline
+Sledi, da izometrija $c$ glavno hiperbolo preslika v presek $\mathbb{K}^{n}(R)$ in afinega podprostora v $\mathbb{R}^{n}$ (tega določa~\ref{eq: af-pog}). Slika gladke krivulje s preslikavo $c$ je gladka krivulja, zato je slika glavne hiperbole, geodetka, evklidska premica v Klein-Beltramijevem modelu $\mathbb{K}^{n}(R)$.\newline
 
 % Poincar\'ejeva krogla
 Sedaj bomo poiskali geodetke na Poincar\'ejevi krogli.
 Ko je $n=2$, z domače naloge vemo, da so geodetke na Poincar\'ejevem disku premeri diska ter krožni loki, ki rob diska $\partial \mathbb{B}^{2}(R)$ sekajo pravokotno.
 
-Za splošen $n$ je situacija podobna. Spomnimo se še hiperbolične stereografske projekcije $h$ med hiperboloidom in Poincare\'ejevo kroglo. Ker je geodetka na hiperboloidu določena z ravnino, ki hiperboloid seka netrivialno, je dovolj obravnavati dvodimenzionalni primer. Oglejmo si dve situaciji. Če glavna hiperbola $H$ vsebuje točko $(0, \dots , 0,R)$, nam predpis za preslikavo $h$ pove, da slika hiperbole, $h(H)$, vsebuje izhodišče in je enaka notranjosti premera krogle $\mathbb{B}^{n}(R)$. V nasprotnem primeru z rotacijo koordinat $(x^{1}, \dots , x^{n}, \tau) \to (\tilde{x}^{1}, \dots , \tilde{x}^{n}, \tau)$ lahko dosežemo, da ravnina, ki vsebuje glavno hiperbolo $H$, leži na podprostoru $\mathit{Lin} \{ \tilde{x}^{1}, \tilde{x}^{2}, \tau \}$. Nato uporabimo znanje iz dvodimenzionalnega primera.\newline
+Za splošen $n$ je situacija podobna. Spomnimo se hiperbolične stereografske projekcije $h$ med hiperboloidom in Poincar\'ejevo kroglo. Ker je geodetka na hiperboloidu določena z ravnino, ki hiperboloid seka netrivialno, je dovolj obravnavati dvodimenzionalni primer. Oglejmo si dve situaciji. Če glavna hiperbola $H$ vsebuje točko $(0, \dots , 0,R) \in \mathbb{H}^{n}(R)$, nam predpis za preslikavo $h$ pove, da slika hiperbole, $h(H)$, vsebuje izhodišče in je enaka notranjosti premera krogle $\mathbb{B}^{n}(R)$. V nasprotnem primeru z rotacijo koordinat $(x^{1}, \dots , x^{n}, \tau) \to (\tilde{x}^{1}, \dots , \tilde{x}^{n}, \tau)$ lahko dosežemo, da ravnina, ki vsebuje glavno hiperbolo $H$, leži na podprostoru $\mathit{Lin} \{ \tilde{x}^{1}, \tilde{x}^{2}, \tau \}$. Nato uporabimo znanje iz dvodimenzionalnega primera ter zaključimo, da so geodetke na $\mathbb{B}^{n}(R)$ premeri krogle in krožni loki, ki rob $\partial \mathbb{B}^{n}(R)$ sekajo pod pravim kotom.\newline
 
 % Poincar\'ejev polprostor
 Na podoben način opišimo še geodetke na Poincar\'ejevem polprostoru.
 V dveh dimenzijah z vaj vemo, da so geodetke na Poincar\'ejevi polravnini natanko navpične premice (vzporednice $\tau$-osi) in polkrožnice s središči na robu polravnine $\partial \mathbb{U}^{2}(R)$.
 
-V splošnem primeru si bomo pomagali z geodetkami v Poincar\'ejevi krogli in Cayleyjevo transformacijo $k$ med Poincarejevim polprostorom ter kroglo.
+V splošnem primeru ($n \in \mathbb{N}$) si bomo pomagali z geodetkami v Poincar\'ejevi krogli in Cayleyjevo transformacijo $k$ med Poincar\'ejevim polprostorom ter kroglo.
 %
 Naj bo $\gamma \colon \mathbb{R} \to \mathbb{U}^{n}(R)$ maksimalna geodetka, za katero točka $\gamma(0)$ leži na $\tau$-osi in je vektor $\gamma'(0) \in \mathit{Lin} \{ \frac{\partial}{\partial x^{1}}, \frac{\partial}{\partial \tau} \}$.
 Označimo z $(x,\tau)$ koordinate na $\mathbb{U}^{n}(R)$ ter z $(u,v)$ koordinate na $\mathbb{B}^{n}(R)$. Predpis za izometrijo $k$ pove, da točka $k \circ \gamma (0)$ leži na $v$-osi in $(k \circ \gamma)'(0) \in \mathit{Lin} \{ \frac{\partial}{\partial u^{1}}, \frac{\partial}{\partial v} \}$.
 Ker je $k$ izometrija, je $k \circ \gamma$ geodetka v $\mathbb{B}^{n}(R)$, vsebovana v $\{u^{1},v \}$-ravnini, katere slika je notranjost premera ali krožni lok, pravokoten na rob krogle. Po primeru iz dveh dimenzij sledi, da je geodetka $\gamma$ vsebovana v $\{ x^{1}, \tau \}$-ravnini, njena slika pa je navpičnica ali polkrožnica s središčem na $\{ \tau = 0 \}$.
 
-Splošneje, vzemimo geodetko $\gamma \colon \mathbb{R} \to \mathbb{U}^{n}(R)$. S translacijo $x$-koordinat najprej začetno točko $\gamma (0)$ prestavimo na $\tau$-os in nato s primerno rotacijo $x$-koordinat dobimo $\gamma'(0) \in \textit{Lin} \{ \frac{\partial}{\partial x^{1}}, \frac{\partial}{\partial \tau} \}$.
+Splošneje, vzemimo poljubno geodetko $\gamma \colon \mathbb{R} \to \mathbb{U}^{n}(R)$. S translacijo $x$-koordinat najprej začetno točko $\gamma (0)$ prestavimo na $\tau$-os in nato s primerno rotacijo $x$-koordinat dobimo $\gamma'(0) \in \textit{Lin} \{ \frac{\partial}{\partial x^{1}}, \frac{\partial}{\partial \tau} \}$.
 Uporabimo posebni primer od prej.~\footnote{Take transformacije $x$-koordinat slikajo navpične premice v navpične premice in polkrožnice s središčem na $\{ \tau =0 \}$ v polkrožnice z enako lastnostjo, zato z njimi nismo izgubili nobene informacije o geodetkah.}
+Geodetke na Poincar\'ejevem polprosotoru so torej natanko premice, vzporedne $\tau$-osi, ali polkrožnice s središči na $\partial \mathbb{U}^{n}(R)$.
+\qed
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hiperbolična geometrija
