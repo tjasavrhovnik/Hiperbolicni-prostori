@@ -317,7 +317,9 @@ Maksimalne geodetke na hiperboličnem prostoru so natanko
 \end{enumerate}
 \end{izrek}
 
+% dokaz geodetk
 Dokaz:
+% hiperboloid
 Najprej bomo obravnavali model hiperboloida $\mathbb{H}^{n}(R)$.
 Opazimo, da je na hiperboloidu tangentna komponenta "povezave" $\nabla^{\perp}$ enaka Levi-Civita, saj je $\mathbb{H}^{n}(R)$ vložena podmnogoterost v $\mathbb{R}^{n,1}$.
 Geodetke na hiperboloidu zato lahko karakteriziramo z naslednjim pogojem: krivulja $\gamma \colon I \subset \mathbb{R} \to \mathbb{H}^{n}(R)$ je geodetka natanko tedaj, ko je za vse $t$ vektor $\gamma''(t)$ pravokoten na tangentni prostor $T_{\gamma(t)}\mathbb{H}^{n}(R)$ glede na metriko Minkowskega $\bar{q}$.
@@ -338,9 +340,44 @@ od koder sledi, da je krivulja $\gamma$ geodetka v $\mathbb{H}^{n}(R)$.
 Veljata še začetna pogoja $\gamma(0)=p$ in $\gamma'(0)=a\bar{v}=v$, zato je $\gamma = \gamma_{v}$ konstantne hitrosti $a$.
 Krivulja $\gamma_{v}$ je gladka vložitev $\mathbb{R} \to \mathbb{H}^{n}(R)$, katere slika je glavna hiperbola (ravnino, ki seka hiperboloid, razpenjata vektorja $p, \ \bar{v}$).
 
-Naj bo $\Sigma \subset \mathbb{R}^{n,1}$ taka ravnina z ortonormirano bazo $\{v,p\}$, da je njen presek s hiperboloidom $\mathbb{H}^{n}(R)$ glavna hiperbola $H$. Potem je $H$ slika geodetke z začetno točko $p$ (točka $p$ in pripadajoč vektor sta identificirana) in začetno hitrostjo $v$.
+Naj bo $\Sigma \subset \mathbb{R}^{n,1}$ taka ravnina z ortonormirano bazo $\{v,p\}$, da je njen presek s hiperboloidom $\mathbb{H}^{n}(R)$ glavna hiperbola $H$. Potem je $H$ slika geodetke z začetno točko $p$ (točka $p$ in pripadajoč vektor sta identificirana) in začetno hitrostjo $v$.\newline
 
-Dokazali smo, da so geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.
+Dokazali smo, da so geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.\newline
+
+% Beltrami-Kleinov model
+Oglejmo si Beltrami-Kleinov model. Vemo, da izometrijo med hiperboloidom in Beltrami-Kleinovim modelom definira predpis $c \colon \mathbb{H}^{n}(R) \to \mathbb{K}^{n}(R)$, $c(x,\tau) = \frac{R}{\tau}x$. Iz zgornjega vemo še, da je slika maksimalne geodetke na hiperboloidu glavna hiperbola.
+Glavno hiperbolo opisuje sistem enačb 
+\begin{gather}
+\lambda_{i}x^{i} + \mu \tau = 0, \ i=1, \dots , n
+\end{gather}
+za $\lambda_{i}, \mu \in \mathbb{R}$.
+Točka $(x,\tau)$ zadošča zgornji enačbi natanko takrat,
+~\footnote{Res, če je $\lambda_{i}x^{i}+\mu \tau=0$, je $\tau=-\frac{\lambda_{i}x^{i}}{\mu}$ in $y^{i}=\frac{Rx^{i}}{\tau}=-\frac{R\mu}{\lambda_{i}}$. 
+Obratno, naj velja $\lambda_{i}y^{i} + \mu R = 0$. Računamo $\lambda_{i}x^{i}+\mu \tau = \lambda_{i}x^{i} - \frac{\lambda_{i}y^{i}\tau}{R} = \lambda_{i} (x^{i} - \frac{y^{i}\tau}{R}) = \lambda_{i} \cdot 0 = 0$. Ekvivalenca je dokazana.} 
+ko za njeno sliko $c(x,\tau)=y$ velja 
+\begin{gather}\label{eq: af-pog}
+\lambda_{i}y^{i} + \mu R = 0, \ i=1, \dots , n.
+\end{gather}
+Sledi, da preslikava $c$ glavno hiperbolo preslika v presek $\mathbb{K}^{n}(R)$ in afinega podprostora v $\mathbb{R}^{n}$ (tega določa~\ref{eq: af-pog}). Slika gladke krivulje z izometrijo $c$ je gladka krivulja, zato je slika glavne hiperbole, geodetka, premica v Klein-Beltramijevem modelu $\mathbb{K}^{n}(R)$.\newline
+
+% Poincar\'ejeva krogla
+Sedaj bomo poiskali geodetke na Poincar\'ejevi krogli.
+Ko je $n=2$, z domače naloge vemo, da so geodetke na Poincar\'ejevem disku premeri diska ter krožni loki, ki rob diska $\partial \mathbb{B}^{2}(R)$ sekajo pravokotno.
+
+Za splošen $n$ je situacija podobna. Spomnimo se še hiperbolične stereografske projekcije $h$ med hiperboloidom in Poincare\'ejevo kroglo. Ker je geodetka na hiperboloidu določena z ravnino, ki hiperboloid seka netrivialno, je dovolj obravnavati dvodimenzionalni primer. Oglejmo si dve situaciji. Če glavna hiperbola $H$ vsebuje točko $(0, \dots , 0,R)$, nam predpis za preslikavo $h$ pove, da slika hiperbole, $h(H)$, vsebuje izhodišče in je enaka notranjosti premera krogle $\mathbb{B}^{n}(R)$. V nasprotnem primeru z rotacijo koordinat $(x^{1}, \dots , x^{n}, \tau) \to (\tilde{x}^{1}, \dots , \tilde{x}^{n}, \tau)$ lahko dosežemo, da ravnina, ki vsebuje glavno hiperbolo $H$, leži na podprostoru $\mathit{Lin} \{ \tilde{x}^{1}, \tilde{x}^{2}, \tau \}$. Nato uporabimo znanje iz dvodimenzionalnega primera.\newline
+
+% Poincar\'ejev polprostor
+Na podoben način opišimo še geodetke na Poincar\'ejevem polprostoru.
+V dveh dimenzijah z vaj vemo, da so geodetke na Poincar\'ejevi polravnini natanko navpične premice (vzporednice $\tau$-osi) in polkrožnice s središči na robu polravnine $\partial \mathbb{U}^{2}(R)$.
+
+V splošnem primeru si bomo pomagali z geodetkami v Poincar\'ejevi krogli in Cayleyjevo transformacijo $k$ med Poincarejevim polprostorom ter kroglo.
+%
+Naj bo $\gamma \colon \mathbb{R} \to \mathbb{U}^{n}(R)$ maksimalna geodetka, za katero točka $\gamma(0)$ leži na $\tau$-osi in je vektor $\gamma'(0) \in \mathit{Lin} \{ \frac{\partial}{\partial x^{1}}, \frac{\partial}{\partial \tau} \}$.
+Označimo z $(x,\tau)$ koordinate na $\mathbb{U}^{n}(R)$ ter z $(u,v)$ koordinate na $\mathbb{B}^{n}(R)$. Predpis za izometrijo $k$ pove, da točka $k \circ \gamma (0)$ leži na $v$-osi in $(k \circ \gamma)'(0) \in \mathit{Lin} \{ \frac{\partial}{\partial u^{1}}, \frac{\partial}{\partial v} \}$.
+Ker je $k$ izometrija, je $k \circ \gamma$ geodetka v $\mathbb{B}^{n}(R)$, vsebovana v $\{u^{1},v \}$-ravnini, katere slika je notranjost premera ali krožni lok, pravokoten na rob krogle. Po primeru iz dveh dimenzij sledi, da je geodetka $\gamma$ vsebovana v $\{ x^{1}, \tau \}$-ravnini, njena slika pa je navpičnica ali polkrožnica s središčem na $\{ \tau = 0 \}$.
+
+Splošneje, vzemimo geodetko $\gamma \colon \mathbb{R} \to \mathbb{U}^{n}(R)$. S translacijo $x$-koordinat najprej začetno točko $\gamma (0)$ prestavimo na $\tau$-os in nato s primerno rotacijo $x$-koordinat dobimo $\gamma'(0) \in \textit{Lin} \{ \frac{\partial}{\partial x^{1}}, \frac{\partial}{\partial \tau} \}$.
+Uporabimo posebni primer od prej.~\footnote{Take transformacije $x$-koordinat slikajo navpične premice v navpične premice in polkrožnice s središčem na $\{ \tau =0 \}$ v polkrožnice z enako lastnostjo, zato z njimi nismo izgubili nobene informacije o geodetkah.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hiperbolična geometrija
