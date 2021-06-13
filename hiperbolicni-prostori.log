@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,54 +413,43 @@ Overfull \hbox (34.50595pt too wide) detected at line 396
 []
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
+<traktoid.jpg, id=52, 702.625pt x 526.96875pt>
+File: traktoid.jpg Graphic file (type jpg)
+<use traktoid.jpg>
+Package pdftex.def Info: traktoid.jpg  used on input line 410.
+(pdftex.def)             Requested size: 245.92242pt x 184.44182pt.
+[11 <./traktoid.jpg>] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
-LaTeX Warning: Command \u invalid in math mode on input line 517.
+ []
 
 [14]
-<poincare-disk-5aksiom.png, id=74, 1204.5pt x 1204.5pt>
+
+LaTeX Warning: Command \u invalid in math mode on input line 524.
+
+<poincare-disk-5aksiom.png, id=75, 1204.5pt x 1204.5pt>
 File: poincare-disk-5aksiom.png Graphic file (type png)
 <use poincare-disk-5aksiom.png>
-Package pdftex.def Info: poincare-disk-5aksiom.png  used on input line 531.
-(pdftex.def)             Requested size: 180.6672pt x 180.6672pt.
+Package pdftex.def Info: poincare-disk-5aksiom.png  used on input line 538.
+(pdftex.def)             Requested size: 156.5905pt x 156.5905pt.
 
-Overfull \hbox (4.42326pt too wide) in paragraph at lines 527--536
+Overfull \hbox (4.42326pt too wide) in paragraph at lines 534--543
 []\T1/lmr/m/it/10 Na Po-in-caréje-vem di-sku so to£ke obi-£ajne to£ke,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
-
  []
 
 
@@ -468,7 +457,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
  []
 
-
+[15 <./poincare-disk-5aksiom.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
@@ -493,20 +482,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
-70.
+76.
 (c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [15 <./poincare-disk-5aksiom.png>] [16] (./hiperbolicni-prostori.aux)
+) [16]
+(./hiperbolicni-prostori.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3732 strings out of 478846
- 50204 string characters out of 5859791
- 366947 words of memory out of 5000000
- 21290 multiletter control sequences out of 15000+600000
+ 3740 strings out of 478846
+ 50323 string characters out of 5859791
+ 365947 words of memory out of 5000000
+ 21296 multiletter control sequences out of 15000+600000
  511520 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,1035b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -533,10 +538,10 @@ b><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on hiperbolicni-prostori.pdf (16 pages, 669251 bytes).
+Output written on hiperbolicni-prostori.pdf (16 pages, 717028 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
