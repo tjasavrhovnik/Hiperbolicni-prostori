@@ -7,6 +7,6 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Hiperbolična stereografska projekcija}{7}{}%
 \contentsline {subsubsection}{\numberline {2.2.3}Posplošena Cayleyjeva transformacija}{8}{}%
 \contentsline {subsection}{\numberline {2.3}Lastnosti hiperboličnih prostorov}{9}{}%
-\contentsline {subsection}{\numberline {2.4}Ukrivljenost}{9}{}%
+\contentsline {subsection}{\numberline {2.4}Ukrivljenost}{10}{}%
 \contentsline {subsection}{\numberline {2.5}Geodetke na modelih hiperboličnih prostorov}{11}{}%
 \contentsline {section}{\numberline {3}Hiperbolična geometrija}{13}{}%

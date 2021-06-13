@@ -332,6 +332,27 @@ Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po
 Ker je $M$ kot preslikava linearna na $\mathbb{R}^{n,1}$, je njen diferencial v točki $N$, $dM_{N} \colon T_{N}\mathbb{R}^{n,1} \to T_{p}\mathbb{R}^{n,1}$, prav tako predstavljen z matriko $M$. To pa pomeni, da je $dM_{n}(\partial_{i}) = e_{i}$, $i = 1, \dots , n$.
 $M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ maksimalno simetričen.
 \qed
+\newline
+
+% simetričnost
+Lastnost hiperboličnih prostorov, ki jo bomo dokazali v nadaljevanju, je šibkejša od maksimalne simetričnosti, a močnejša od homogenosti. Sprva jo definirajmo.
+
+\begin{definicija}
+Naj bo $(M,g)$ Riemannova mnogoterost in $p\in M$ točka na njej. Izometriji $\phi \colon M \to M$, za katero velja $\phi(p) = p$ in $d\phi_{p} = -\textup{Id} \colon T_{p}M \to T_{p}M$, pravimo \emph{točkovno zrcaljenje} v točki $p$.
+
+Povezana Riemannova mnogoterost $(M,g)$ je \emph{simetrična}, če v vsaki točki $p \in M$ premore točkovno zrcaljenje v $p$.
+\end{definicija}
+
+\begin{trditev}
+Hiperbolični prostor je simetričen.
+\end{trditev}
+
+\noindent
+{\em Dokaz:\/} 
+Naj bo $(M,g)$ povezana maksimalno simetrična Riemannova mnogoterost. Naj bo $p \in M$ poljubna točka in izberimo ortonormirano bazo $\{ e_{i} \}_{i}$ za $T_{p}M$. Ker je mnogoterost maksimalno simetrična, obstaja izometrija $\phi \colon M \to M$, ki $p$ preslika vase, ortonormirano bazo $\{e_{i} \}_{i}$ pa preslika v $\{ -e_{i} \}_{i}$. Torej zadošča $d\phi_{p} = -\textup{Id}$. To pa je natanko simetričnost.
+
+V posebnem, hiperbolični prostor je povezana Riemannova mnogoterost in po že dokazanem maksimalno simetričen. Iz zgornjega sledi njegova simetričnost. 
+\qed
 
 %%%%%%%%%%%%%%%%%%%
 % Ukrivljenost
