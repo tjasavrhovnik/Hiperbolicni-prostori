@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,7 +187,7 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \c@trditev=\count269
 \c@posledica=\count270
 \c@primer=\count271
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
 .
 
 (c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -208,20 +208,20 @@ LaTeX Warning: Label `eq:K^n metrika' multiply defined.
 )
 \openout1 = `hiperbolicni-prostori.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count273
@@ -245,42 +245,42 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-0.
+1.
 
 (c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-0.
+1.
 
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-30.
+31.
 
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-30.
+31.
 
 (c:/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 30.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 30.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 30.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+(Font)              <6> on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -302,69 +302,69 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [2] [3] [4]
 
-LaTeX Warning: Command \u invalid in math mode on input line 132.
+LaTeX Warning: Command \u invalid in math mode on input line 133.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 134.
+LaTeX Warning: Command \u invalid in math mode on input line 135.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 142.
+LaTeX Warning: Command \u invalid in math mode on input line 143.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 144.
+LaTeX Warning: Command \u invalid in math mode on input line 145.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 152.
+LaTeX Warning: Command \u invalid in math mode on input line 153.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 154.
+LaTeX Warning: Command \u invalid in math mode on input line 155.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 162.
+LaTeX Warning: Command \u invalid in math mode on input line 163.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 164.
+LaTeX Warning: Command \u invalid in math mode on input line 165.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 169.
+LaTeX Warning: Command \u invalid in math mode on input line 170.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 169.
+LaTeX Warning: Command \u invalid in math mode on input line 170.
 
 [5]
 
-LaTeX Warning: Command \u invalid in math mode on input line 176.
+LaTeX Warning: Command \u invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 176.
+LaTeX Warning: Command \u invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 213.
+LaTeX Warning: Command \u invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 213.
+LaTeX Warning: Command \u invalid in math mode on input line 215.
 
 [6]
 
-LaTeX Warning: Command \u invalid in math mode on input line 236.
+LaTeX Warning: Command \u invalid in math mode on input line 238.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 236.
+LaTeX Warning: Command \u invalid in math mode on input line 238.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 243.
+LaTeX Warning: Command \u invalid in math mode on input line 245.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 243.
+LaTeX Warning: Command \u invalid in math mode on input line 245.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 244.
+LaTeX Warning: Command \u invalid in math mode on input line 246.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 244.
+LaTeX Warning: Command \u invalid in math mode on input line 246.
 
 [7]
-Overfull \hbox (3.3618pt too wide) in paragraph at lines 250--253
+Overfull \hbox (3.3618pt too wide) in paragraph at lines 252--255
 []\T1/lmr/m/n/10 Naj bo $\OML/lmm/m/it/10 S \OT1/lmr/m/n/10 = (0\OML/lmm/m/it/1
 0 ; [] ; \OMS/lmsy/m/n/10 ^^@\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/
 10 2 \U/msb/m/n/10 R[]$ \T1/lmr/m/n/10 in iz-be-rimo po-ljubno to£ko $\OML/lmm/
@@ -373,100 +373,146 @@ m/it/10 T \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 x[]; [] ; x[]; ^^\\OT1/lmr/m/n/10
  []
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 275.
+LaTeX Warning: Command \u invalid in math mode on input line 277.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 275.
+LaTeX Warning: Command \u invalid in math mode on input line 277.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 282.
+LaTeX Warning: Command \u invalid in math mode on input line 284.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 282.
+LaTeX Warning: Command \u invalid in math mode on input line 284.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 283.
+LaTeX Warning: Command \u invalid in math mode on input line 285.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 283.
+LaTeX Warning: Command \u invalid in math mode on input line 285.
 
 
-Overfull \hbox (3.02751pt too wide) in paragraph at lines 287--289
+Overfull \hbox (3.02751pt too wide) in paragraph at lines 289--291
 \T1/lmr/m/n/10 Omenimo ²e kon-struk-cijo izo-me-trije med Po-in-caréjevo polrav
 -nino in Po-in-caréjevo
  []
 
 [8]
 
-LaTeX Warning: Command \u invalid in math mode on input line 309.
+LaTeX Warning: Command \u invalid in math mode on input line 311.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 314.
+LaTeX Warning: Command \u invalid in math mode on input line 316.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 341--346
+Underfull \hbox (badness 10000) in paragraph at lines 343--348
 
  []
 
 [10]
-Overfull \hbox (34.50595pt too wide) detected at line 394
+Overfull \hbox (34.50595pt too wide) detected at line 396
 []
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
-
- []
-
-[12]
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--488
+Underfull \hbox (badness 10000) in paragraph at lines 482--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 [13]
 
-LaTeX Warning: Command \u invalid in math mode on input line 515.
+LaTeX Warning: Command \u invalid in math mode on input line 517.
 
 [14]
 <poincare-disk-5aksiom.png, id=74, 1204.5pt x 1204.5pt>
 File: poincare-disk-5aksiom.png Graphic file (type png)
 <use poincare-disk-5aksiom.png>
-Package pdftex.def Info: poincare-disk-5aksiom.png  used on input line 529.
+Package pdftex.def Info: poincare-disk-5aksiom.png  used on input line 531.
 (pdftex.def)             Requested size: 180.6672pt x 180.6672pt.
 
-Overfull \hbox (4.42326pt too wide) in paragraph at lines 525--534
+Overfull \hbox (4.42326pt too wide) in paragraph at lines 527--536
 []\T1/lmr/m/it/10 Na Po-in-caréje-vem di-sku so to£ke obi-£ajne to£ke,
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 541.
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
-[15 <./poincare-disk-5aksiom.png>] (./hiperbolicni-prostori.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+70.
+(c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [15 <./poincare-disk-5aksiom.png>] [16] (./hiperbolicni-prostori.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3682 strings out of 478846
- 49471 string characters out of 5859791
- 366898 words of memory out of 5000000
- 21244 multiletter control sequences out of 15000+600000
- 511201 words of font info for 83 fonts, out of 8000000 for 9000
+ 3732 strings out of 478846
+ 50204 string characters out of 5859791
+ 366947 words of memory out of 5000000
+ 21290 multiletter control sequences out of 15000+600000
+ 511520 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,1035b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/
-dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2021/tex
+mf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvip
+s/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 }{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2021/
 texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/t
 ype1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmc
@@ -483,13 +529,14 @@ lic/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c
 :/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/texlive/2021/texm
 f-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1
 /public/lm/lmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pf
-b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c
-:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on hiperbolicni-prostori.pdf (15 pages, 640448 bytes).
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on hiperbolicni-prostori.pdf (16 pages, 669251 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 167 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

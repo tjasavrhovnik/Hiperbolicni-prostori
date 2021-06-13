@@ -17,6 +17,7 @@
 
 \def\qed{$\hfill\Box$}   % konec dokaza
 \def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
+\newcommand{\geslo}[2]{\noindent\textbf{#1} \quad \hangindent=1cm #2\\[-1pc]}
 
 \begin{document}
 
@@ -174,6 +175,7 @@ Vzemimo enotsko $n$-dimenzionalno Poincar\'ejevo kroglo $\mathbb{B}^{n}(1)$. Izr
 \begin{gather}
 r = d(0, P) = \int_{0}^{R} \sqrt{\u g_{1}^{3}} = \int_{0}^{R} \frac{2ds}{1-|s|^2} = \ln{\frac{1+R}{1-R}}.
 \end{gather}
+Ko se točka $P$ približuje robu krogle, njena hiperbolična razdalja do izhodišča raste v neskončnost.
 S preoblikovanjem zgornje zveze dobimo 
 \begin{gather}
 R = \frac{e^{r}-1}{e^{r}+1} = \tanh{\frac{r}{2}},
@@ -409,7 +411,7 @@ Traktoid ima konstantno negativno Gaussovo ukrivljenost in spada med hiperbolič
 \end{gather}
  Za fiksen izbor števil $n \in \mathbb{N}, \ R>0$ je $\kappa = \mbox{konst.}<0$. Ker je $\mathbb{H}^{n}(R)$ model hiperboličnega prostora dimenzije $n$ in polmera $R$, ter so vsi modeli med seboj izometrični, ima vsak hiperbolični prostor konstantno negativno Gaussovo ukrivljenost. Velja tudi $\textup{sec}(\mathbb{H}^{n}(R)) = -1/R^2$, kjer $\textup{sec}$ označuje \emph{prerezno ukrivljenost}. Za poljubne $R>0$ dobimo vse možne vrednosti konstantno negativne prerezne ukrivljenosti, ki ustrezajo hiperboličnim prostorom polmera $R$.
 
-Naslednji rezultat bomo le navedli brez dokaza. Pomemben in zanimiv je zato, ker klasificira Riemannove mnogoterosti glede na njihovo prerezno ukrivljenost.
+Naslednji rezultat bomo le navedli brez dokaza. Povzet je po \cite[Theorem 12.4 (Killing-Hopf)]{leeRM}. Pomemben in zanimiv je zato, ker klasificira Riemannove mnogoterosti glede na njihovo prerezno ukrivljenost.
 
 \begin{izrek}[Killing-Hopf]
 Naj bo $n \geq 2$ in $(M,g)$ polna~\footnote{Riemannova mnogoterost je \emph{polna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
@@ -527,16 +529,51 @@ Na Poincar\'ejevem disku so točke običajne točke, za premice izberemo geodetk
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.15]{poincare-disk-5aksiom.png}
-\caption{Na Poincar\'ejevem disku za dani točko in premico obstaja neskončno vzporednic premici skozi izbrano točko.}
+\caption{Na Poincar\'ejevem disku za dani točko in premico obstaja neskončno vzporednic premici skozi izbrano točko.~\cite[vir slike]{hypGeom-wiki}.}
 \end{center}
 \end{figure}
 %
 \end{primer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Slovar strokovnih izrazov
+
+\section*{Slovar strokovnih izrazov}
+
+\geslo{conformal}{konformen}
+
+\geslo{curvature}{ukrivljenost}
+
+\geslo{geodesic}{geodetka}
+
+\geslo{homogeneous}{homogen}
+
+\geslo{hyperbolic metric}{hiperbolična metrika}
+
+\geslo{hyperbolic space}{hiperboličen prostor}
+
+\geslo{isometry}{izometrija}
+
+\geslo{maximally symmetric/frame homogeneous}{maksimalno simetričen}
+
+\geslo{Riemannian manifold}{Riemannova mnogoterost}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Literatura
 
 \begin{thebibliography}{99}
+
+\bibitem{leeRM} J.~M.~Lee, \emph{Introduction to Riemannian Manifolds}, 2nd ed., Springer International Publishing AG, 2018.
+
+\bibitem{leeSM} J.~M.~Lee, \emph{Introduction to Smooth Manifolds}, 2nd ed., Springer, New York, 2013.
+
+\bibitem{cannon et.} J.~W.~Cannon in drugi, \emph{Hyperbolic Geometry}, Flavours of Geometry, MSRI Publication, \textbf{31}, 1997; dostopno tudi na \url{http://library.msri.org/books/Book31/files/cannon.pdf}.
+
+\bibitem{zapiski} Zapiski s predavanj prof.~B.~Lavriča pri predmetu Elementarna geometrija, Univerza v Ljubljani, Fakulteta za matematiko in fiziko (študijsko leto 2018/2019).
+
+\bibitem{parkkonen} J.~Parkkonen, \emph{Hyperbolic geometry}, [ogled 13.~6.~2021], dostopno na \url{http://users.jyu.fi/~parkkone/RG2012/HypGeom.pdf}.
+
+\bibitem{hypGeom-wiki} Sodelavci Wikipedie, \emph{Hyperbolic geometry}, verzija 10.~6.~2021, [ogled 13.~6.~2021], dostopno na \url{https://en.wikipedia.org/wiki/Hyperbolic_geometry}.
 
 \end{thebibliography}
 
