@@ -1,12 +1,13 @@
 \babel@toc {slovene}{}
-\contentsline {section}{\numberline {1}Osnovne definicije}{3}{}%
-\contentsline {section}{\numberline {2}O hiperboličnih prostorih}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Modeli}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Izometričnost modelov}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Centralna projekcija}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Hiperbolična stereografska projekcija}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Posplošena Cayleyjeva transformacija}{8}{}%
-\contentsline {subsection}{\numberline {2.3}Lastnosti hiperboličnih prostorov}{9}{}%
-\contentsline {subsection}{\numberline {2.4}Ukrivljenost}{10}{}%
-\contentsline {subsection}{\numberline {2.5}Geodetke na modelih hiperboličnih prostorov}{11}{}%
-\contentsline {section}{\numberline {3}Hiperbolična geometrija}{13}{}%
+\contentsline {section}{\numberline {1}Uvod}{3}{}%
+\contentsline {section}{\numberline {2}Osnovne definicije}{3}{}%
+\contentsline {section}{\numberline {3}O hiperboličnih prostorih}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Modeli}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Izometričnost modelov}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Centralna projekcija}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Hiperbolična stereografska projekcija}{8}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Posplošena Cayleyjeva transformacija}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Lastnosti hiperboličnih prostorov}{9}{}%
+\contentsline {subsection}{\numberline {3.4}Ukrivljenost}{10}{}%
+\contentsline {subsection}{\numberline {3.5}Geodetke na modelih hiperboličnih prostorov}{12}{}%
+\contentsline {section}{\numberline {4}Hiperbolična geometrija}{14}{}%

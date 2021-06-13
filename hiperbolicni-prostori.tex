@@ -36,6 +36,16 @@
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uvod
+\section{Uvod}
+
+Članek obravnava razred Riemannovih mnogoterosti, imenovanih hiperbolični prostori. Maksimalno simetrične Riemannove mnogoterosti ločimo glede na vrednosti njihove Gaussove ukrivljenosti. Model tistih z ničelno je evklidski prostor $\mathbb{R}^{n}$, $n$-dimenzionalna sfera $\mathbb{S}^{n}(R)$ je modelni prostor s konstantno pozitivno Gaussovo ukrivljenostjo, konstantna negativna Gaussova ukrivljenost pa je lastnost hiperboličnih prostorov $\mathbb{H}^{n}(R)$.
+
+Že samo ime makismalna simetričnost pove, da imajo taki prostori visoko simetrijo. Nekatere lastnosti, ki so posledice tega dejstva, bomo opisali v nadaljevanju. Predstavili bomo štiri osnovne modele $n$-dimenzionalnega hiperboličnega prostora in s konstrukcijo preslikav med njimi dokazali izometričnost modelov. S pomočjo slednjega bomo na vsakem izmed modelov poiskali geodetke ter navedli vrednost Gaussove ukrivljenosti. Čeprav se na prvi pogled zdi, da hiperboličnih prostorov ni mogoče primerjati z evklidskimi, se izkaže, da sta lokalno konformno izomorfna. Na kratko si bomo ogledali hiperbolično geometrijo, ki se je nedolgo nazaj razvila iz ravninske (evklidske) geometrije. 
+
+Študij hiperboličnih prostorov ni zanimiv le z matematične perspektive. Če na $4$-dimenzionalnem hiperboličnem prostoru, natančneje, prostoru Minkowskega, izberemo tri prostorske in eno časovno koordinato, z njim lahko opišemo prostor-čas v teoriji relativnosti. To ima velik pomen za računanje fizikalnih invariant ter nenazadnje lastnosti našega vesolja. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Osnovne definicije
 \section{Osnovne definicije}
 
@@ -95,7 +105,7 @@ Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko p
 % Modeli
 \subsection{Modeli}
 
-V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so maksimalno simetrične Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo frame homogeneity. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
+V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so maksimalno simetrične Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo makismalno simetričnost. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
 
 Naj bo $n \geq 1$ in izberimo $R>0$.
 \emph{$(n+1)$-dimenzionalni prostor Minkowskega} je prostor $\mathbb{R}^{n,1}$, ki ga v standardnih koordinatah $(x^{1}, \dots , x^{n}, \tau)$ opremimo z \emph{metriko Minkowskega}
@@ -494,6 +504,34 @@ Geodetke na Poincar\'ejevem polprosotoru so torej natanko premice, vzporedne $\t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hiperbolična geometrija
 \section{Hiperbolična geometrija}
+
+V tem poglavju se bomo ukvarjali z dvodimenzionalnimi prostori. Hiperbolični prostor tako postane hiperbolična ravnina, ki je model neevklidske hiperbolične geometrije.
+
+Evklidska ravninska geometrija je zgrajena na sistemu aksiomov, ki jih je prvi zasnoval Evklid okoli leta 300~pr.~n.~št. v knjigi Elementi. Njegova ideja je bila iz nekaj osnovnih preprostih resnic izpeljati nove trditve. Evklidove aksiome je ob koncu 19.~stoletja v modernejši matematični jezik prevedel David Hilbert, čigar sistem je sestavljen iz petih skupin aksiomov: aksiomi lege in povezave, aksiomi urejenosti, aksiomi skladnosti, aksiomi zveznosti in aksiom o vzporednici.
+Hiperbolična geometrija izpolnjuje vse aksiome prvih štirih skupin, namesto zadnjega pa zahtevamo \\[0.4cm]
+\textsc{Aksiom o vzporednici}: Za vsako premico $p$ in točko $T$, ki ne leži na premici $p$, obstajata vsaj dve vzporednici premice $p$, ki gresta skozi točko $T$. \\[0.4cm]
+Zakaj je aksiom o vzporednici drugačen? Matematikom se je ta aksiom več stoletij zdel odveč - želeli so ga izpeljati iz preostalih. Vendar to ni možno. To je vodilo do definicije hiperbolične geometrije, ki sta jo v 30.-ih letih 19.~stoletja neodvisno odkrila Lobachevsky in Bolyai.
+
+Hiperbolična geometrija je torej zgrajena na analogen način kot ravninska. Namesto evklidske ravnine $\mathbb{R}^2$ izberemo hiperbolično ravnino $\mathbb{H}^2$, evklidsko metriko pa nadomestimo s hiperbolično metriko $\u g$ (zaradi izometričnosti je vseeno, katero izmed hiperboličnih metrik izberemo).
+Brez dokazov navedimo nekaj ekvivalentov novemu aksiomu o vzporednici.
+\begin{enumerate}
+\item Vsota notranjih kotov trikotnika je manjša od $\pi$.
+\item Pravokotnik ne obstaja.
+\item Podobna trikotnika sta skladna.
+\end{enumerate}
+Iz aksiomov hiperbolične geometrije lahko izpeljemo številne lastnosti, ki pokažejo razlike med evklidsko in neevklidsko geometrijo.
+
+\begin{primer}[Poincar\'ejev disk]
+Na Poincar\'ejevem disku so točke običajne točke, za premice izberemo geodetke na disku, koti so običajni (kot med krožnicama je enak kotu med tangentama na krožnici). Ilustracija aksioma o vzporednici je predstavljena na spodnji sliki.
+%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.15]{poincare-disk-5aksiom.png}
+\caption{Na Poincar\'ejevem disku za dani točko in premico obstaja neskončno vzporednic premici skozi izbrano točko.}
+\end{center}
+\end{figure}
+%
+\end{primer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Literatura

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 09:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.11)  13 JUN 2021 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,24 +290,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./hiperbolicni
 -prostori.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 4.
+(Font)              <10> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 4.
+(Font)              <7> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <5> on input line 5.
 )
 \tf@toc=\write3
 \openout3 = `hiperbolicni-prostori.toc'.
 
 
-[2] [3]
-
-LaTeX Warning: Command \u invalid in math mode on input line 122.
-
-
-LaTeX Warning: Command \u invalid in math mode on input line 124.
-
-[4]
+[2] [3] [4]
 
 LaTeX Warning: Command \u invalid in math mode on input line 132.
 
@@ -327,45 +320,51 @@ LaTeX Warning: Command \u invalid in math mode on input line 152.
 LaTeX Warning: Command \u invalid in math mode on input line 154.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 159.
+LaTeX Warning: Command \u invalid in math mode on input line 162.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 159.
+LaTeX Warning: Command \u invalid in math mode on input line 164.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 166.
+LaTeX Warning: Command \u invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 166.
+LaTeX Warning: Command \u invalid in math mode on input line 169.
 
 [5]
 
-LaTeX Warning: Command \u invalid in math mode on input line 203.
+LaTeX Warning: Command \u invalid in math mode on input line 176.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 203.
+LaTeX Warning: Command \u invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \u invalid in math mode on input line 213.
+
+
+LaTeX Warning: Command \u invalid in math mode on input line 213.
 
 [6]
 
-LaTeX Warning: Command \u invalid in math mode on input line 226.
+LaTeX Warning: Command \u invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 226.
+LaTeX Warning: Command \u invalid in math mode on input line 236.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 233.
+LaTeX Warning: Command \u invalid in math mode on input line 243.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 233.
+LaTeX Warning: Command \u invalid in math mode on input line 243.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 234.
+LaTeX Warning: Command \u invalid in math mode on input line 244.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 234.
+LaTeX Warning: Command \u invalid in math mode on input line 244.
 
-
-Overfull \hbox (3.3618pt too wide) in paragraph at lines 240--243
+[7]
+Overfull \hbox (3.3618pt too wide) in paragraph at lines 250--253
 []\T1/lmr/m/n/10 Naj bo $\OML/lmm/m/it/10 S \OT1/lmr/m/n/10 = (0\OML/lmm/m/it/1
 0 ; [] ; \OMS/lmsy/m/n/10 ^^@\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/
 10 2 \U/msb/m/n/10 R[]$ \T1/lmr/m/n/10 in iz-be-rimo po-ljubno to£ko $\OML/lmm/
@@ -373,84 +372,98 @@ m/it/10 T \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 x[]; [] ; x[]; ^^\\OT1/lmr/m/n/10
  )$
  []
 
-[7]
 
-LaTeX Warning: Command \u invalid in math mode on input line 265.
-
-
-LaTeX Warning: Command \u invalid in math mode on input line 265.
+LaTeX Warning: Command \u invalid in math mode on input line 275.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 272.
+LaTeX Warning: Command \u invalid in math mode on input line 275.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 272.
+LaTeX Warning: Command \u invalid in math mode on input line 282.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 273.
+LaTeX Warning: Command \u invalid in math mode on input line 282.
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 273.
+LaTeX Warning: Command \u invalid in math mode on input line 283.
 
 
-Overfull \hbox (3.02751pt too wide) in paragraph at lines 277--279
+LaTeX Warning: Command \u invalid in math mode on input line 283.
+
+
+Overfull \hbox (3.02751pt too wide) in paragraph at lines 287--289
 \T1/lmr/m/n/10 Omenimo ²e kon-struk-cijo izo-me-trije med Po-in-caréjevo polrav
 -nino in Po-in-caréjevo
  []
 
-
-LaTeX Warning: Command \u invalid in math mode on input line 299.
-
 [8]
 
-LaTeX Warning: Command \u invalid in math mode on input line 304.
+LaTeX Warning: Command \u invalid in math mode on input line 309.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--336
+LaTeX Warning: Command \u invalid in math mode on input line 314.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 341--346
 
  []
 
-[9]
-Overfull \hbox (34.50595pt too wide) detected at line 384
+[10]
+Overfull \hbox (34.50595pt too wide) detected at line 394
 []
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 503.
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
-[13] (./hiperbolicni-prostori.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+
+ []
+
+[13]
+
+LaTeX Warning: Command \u invalid in math mode on input line 515.
+
+[14]
+<poincare-disk-5aksiom.png, id=74, 1204.5pt x 1204.5pt>
+File: poincare-disk-5aksiom.png Graphic file (type png)
+<use poincare-disk-5aksiom.png>
+Package pdftex.def Info: poincare-disk-5aksiom.png  used on input line 529.
+(pdftex.def)             Requested size: 180.6672pt x 180.6672pt.
+
+Overfull \hbox (4.42326pt too wide) in paragraph at lines 525--534
+[]\T1/lmr/m/it/10 Na Po-in-caréje-vem di-sku so to£ke obi-£ajne to£ke,
+ []
+
+
+LaTeX Warning: Empty `thebibliography' environment on input line 541.
+
+[15 <./poincare-disk-5aksiom.png>] (./hiperbolicni-prostori.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3674 strings out of 478846
- 49261 string characters out of 5859791
- 365898 words of memory out of 5000000
- 21238 multiletter control sequences out of 15000+600000
+ 3682 strings out of 478846
+ 49471 string characters out of 5859791
+ 366898 words of memory out of 5000000
+ 21244 multiletter control sequences out of 15000+600000
  511201 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,62p,1035b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,62p,1035b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/tex
 mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/
 dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
@@ -473,10 +486,10 @@ f-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1
 b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c
 :/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on hiperbolicni-prostori.pdf (13 pages, 375198 bytes).
+Output written on hiperbolicni-prostori.pdf (15 pages, 640448 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 160 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
