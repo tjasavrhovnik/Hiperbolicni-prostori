@@ -36,11 +36,8 @@
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Modeli
-\section{Modeli hiperboličnih prostorov}
-%%%%%%%%%%%%%%%%%%%
 % Osnovne definicije
-\subsection{Osnovne definicije}
+\section{Osnovne definicije}
 
 Naslednje definicije opisujejo mnogoterosti z visoko simetrijo. Natančneje to pomeni, da so njihove grupe izometrij velike. Najpreprostejši primer so Evklidski prostori - zanje že intuitivno vemo, da obstajajo preslikave, izometrije, ki poljubni točki preslikajo eno v drugo, celo več, ortonormirano bazo v prvi točki lahko preslikajo v ortonormirano bazo v drugi. Izkazalo se bo, da to niso edini taki prostori. Drug primer so $n$-dimenzionalne sfere $\mathbb{S}^{n}$, mi pa se bomo posvetili študiju hiperboličnih prostorov.
 
@@ -51,7 +48,7 @@ Naj bosta $(M,g)$ in $(\tilde{M}, \tilde{g})$ Riemannovi mnogoterosti. Gladka pr
 Difeomorfizem, ki ohranja metriko, imenujemo \emph{izometrija}. \emph{Lokalna izometrija} pa je lokalni difeomorfizem, ki ohranja metriko. 
 \end{definicija}
 
-% frame homogeneity
+% maksimalna simetričnost
 \begin{definicija}
 Naj bo $(M,g)$ Riemannova mnogoterost. Množico izometrij mnogoterosti $M$, ki je grupa za komponiranje, označimo z $\textup{Iso}(M,g)$.
 Pravimo, da je $(M,g)$ \emph{homogena Riemannova mnogoterost}, če grupa $\textup{Iso}(M,g)$ deluje tranzitivno na $M$. To pomeni, da za poljuben par točk $p,q \in M$ obstaja izometrija $\phi \colon M \to M$ z lastnostjo $\phi(p)=q$.
@@ -74,7 +71,7 @@ Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{
 \end{equation}
 
 \begin{definicija}
-Riemannova mnogoterost $(M,g)$ je \emph{frame homogeneous} oziroma \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
+Riemannova mnogoterost $(M,g)$ je \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
 \end{definicija}
 
 Geometrično si homogeno Riemannovo mnogoterost predstavljamo kot tako, ki v vsaki točki na njej izgleda enako.
@@ -91,11 +88,14 @@ Konformni difeomorfizmi med Riemannovimi mnogoterostmi so ravno difeomorfizmi, k
 
 Posebej zanimive Riemannove mnogoterosti so tiste, ki jih (vsaj) lokalno lahko primerjamo z Evklidskim prostorom. Pravimo, da je Riemannova mnogoterost $(M,g)$ \emph{lokalno konformno ploska}, če ima vsaka točka $p\in M$ okolico, ki je konformno ekvivalentna odprti množici v $(\mathbb{R}^{n}, \bar{g})$, kjer $\bar{g}$ označuje običajno Evklidsko metriko. Videli bomo, da imajo hiperbolični prostori to lastnost.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% O hiperboličnih prostorih
+\section{O hiperboličnih prostorih}
 %%%%%%%%%%%%%%%%%%%
 % Modeli
 \subsection{Modeli}
 
-V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so "frame homogeneous" Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo frame homogeneity. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
+V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so maksimalno simetrične Riemannove mnogoterosti dimenzije $n \geq 1$. Sprva jih bomo le navedli, kasneje pa pokazali njihovo frame homogeneity. Izkaže se, da so vsi ti modeli med seboj izometrični, zato lahko v praksi izberemo kateregakoli izmed njih, na njem obravnavamo želeno in to prenesemo na splošen hiperbolični prostor te dimenzije.
 
 Naj bo $n \geq 1$ in izberimo $R>0$.
 \emph{$(n+1)$-dimenzionalni prostor Minkowskega} je prostor $\mathbb{R}^{n,1}$, ki ga v standardnih koordinatah $(x^{1}, \dots , x^{n}, \tau)$ opremimo z \emph{metriko Minkowskega}
@@ -105,7 +105,7 @@ Naj bo $n \geq 1$ in izberimo $R>0$.
 Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
 
 \begin{primer}
-4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poncar\'ejeva grupa} sestavlja $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in tri "time boosts" (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
+4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poncar\'ejeva grupa} sestavlja $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in trije Lorentzovi potiski (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
 \end{primer}
 
 Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboličnega prostora dimenzije $n$ in polmera $R$.
@@ -157,6 +157,32 @@ Mnogoterosti $(\mathbb{U}^{n}(R), \u g_{R}^{4})$ pravimo \emph{Poincar\'ejev pol
 %%%%%%%%%%
 
 Zaradi izometričnosti zgornjih modelov pogosto hiperbolični prostor dimenzije $n$ s polmerom $R$ označimo z $\mathbb{H}^{n}(R)$, metriko pa z $\u g_{R}$, pri čemer imamo v mislih poljubnega izmed modelov. Če za polmer izberemo $R=1$, Riemannovo mnogoterost označimo s $(\mathbb{H}^{n}, \u g)$ in imenujemo \emph{hiperbolični prostor} dimenzije $n$. V dveh dimenzijah dobimo \emph{hiperbolično ravnino}, h kateri se bomo vrnili kasneje.
+
+% Primer - Poincar\'ejeva krogla
+\begin{primer}
+Vzemimo enotsko $n$-dimenzionalno Poincar\'ejevo kroglo $\mathbb{B}^{n}(1)$. Izračunajmo razdaljo med izhodiščem in točko $P = (R,0, \dots , 0)$ v Poincar\'ejevi krogli:
+\begin{gather}
+r = d(0, P) = \int_{0}^{R} \sqrt{\u g_{1}^{3}} = \int_{0}^{R} \frac{2ds}{1-|s|^2} = \ln{\frac{1+R}{1-R}}.
+\end{gather}
+S preoblikovanjem zgornje zveze dobimo 
+\begin{gather}
+R = \frac{e^{r}-1}{e^{r}+1} = \tanh{\frac{r}{2}},
+\end{gather}
+ki pove, kako se (evklidski) polmer Poincar\'ejeve krogle $\mathbb{B}^{n}(R)$ izraža s hiperbolično razdaljo $r$.\newline 
+Kolikšna pa je njena prostornina?
+Naj bo $d\mu^{n}(w)$ volumski element za $\mathbb{B}^{n}(R)$ (koordinate $w=(u,v)$). Velja $d\mu^{n}(w) = u^{n-1} d\textup{Vol}(\mathbb{S}^{n-1})(v)$. Sledi 
+\begin{align*}
+\textup{Vol}(\mathbb{B}^{n}(R)) &= \int_{\mathbb{B}^{n}(R)} \frac{2^{n} d\mu^{n}(s)}{(1-|s|^2)^{n}} = \textup{Vol}(\mathbb{S}^{n-1}) \int_{0}^{R} \frac{2^{n} y^{n-1}}{(1-y^{2})^{n}} dy \\ 
+&= 2^{n-1} \textup{Vol}(\mathbb{S}^{n-1}) \int_{0}^{\tanh{\frac{r}{2}}} \frac{2 y^{n-1}}{(1-y^{2})^{n}} dy \quad \left[y = \tanh{\frac{x}{2}} \right] \\
+&= 2^{n-1} \textup{Vol}(\mathbb{S}^{n-1}) \int_{0}^{r} \sinh^{n-1}{\frac{x}{2}} \cosh^{n-1}{\frac{x}{2}} dx \\
+&= \textup{Vol}(\mathbb{S}^{n-1}) \int_{0}^{r} \sinh^{n-1}{x} dx
+\end{align*}
+Opazimo, da za velike $r$, tj.~v limiti, ko gre $r \to \infty$, dobimo približno oceno
+\begin{gather*}
+\textup{Vol}(\mathbb{B}^{n}(R)) \sim \frac{1}{2^{n-1}} \textup{Vol}(\mathbb{S}^{n-1}) e^{r(n-1)}.
+\end{gather*}
+Z besedami to pomeni, da je prostornina Poincar\'ejeve krogle eksponentno odvisna od njenega polmera. V Evklidskih prostorih je odvisnost polinomska.
+\end{primer}
 
 %%%%%%%%%%%%%%%%%%%
 % Izometričnost modelov
@@ -286,7 +312,7 @@ Njeno podgrupo, ki ohranja hiperboloid $\mathbb{H}^{n}(R)$ označimo z $\textup{
 \end{definicija}
 
 \begin{trditev} \label{trd: frame-homo}
-Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je "frame homogeneous".
+Lorentzova grupa $\textup{O}^{+}(n,1)$ deluje tranzitivno na množico $\textup{O}(\mathbb{H}^{n}(R))$. Hiperbolični prostor $\mathbb{H}^{n}(R)$ je makismalno simetričen.
 \end{trditev}
 
 \noindent
@@ -304,7 +330,7 @@ Potem je množica $\{ e_{1}, \dots , e_{n}, \bar{p} \}$ ortonormirana baza prost
 
 Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po konstrukciji velja $M \in \textup{O}^{+}(n,1)$ in $M$ slika $\{\partial_{1}, \dots , \partial_{n+1} \}$ v $\{e_{1}, \dots , e_{n}, \bar{p} \}$ ter $N$ v $p$.
 Ker je $M$ kot preslikava linearna na $\mathbb{R}^{n,1}$, je njen diferencial v točki $N$, $dM_{N} \colon T_{N}\mathbb{R}^{n,1} \to T_{p}\mathbb{R}^{n,1}$, prav tako predstavljen z matriko $M$. To pa pomeni, da je $dM_{n}(\partial_{i}) = e_{i}$, $i = 1, \dots , n$.
-$M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ frame homogeneous.
+$M$ je iskana preslikava in delovanje grupe je tranzitivno. Po definiciji je zato $\mathbb{H}^{n}(R)$ maksimalno simetričen.
 \qed
 
 %%%%%%%%%%%%%%%%%%%
@@ -350,20 +376,20 @@ Traktoid ima konstantno negativno Gaussovo ukrivljenost in spada med hiperbolič
 \begin{gather}
 \kappa (\mathbb{H}^{n}(R)) = \left(-\frac{1}{iR} \right)^n.
 \end{gather}
- Za fiksen izbor števil $n \in \mathbb{N}, \ R>0$ je $\kappa = \mbox{konst.}<0$. Ker je $\mathbb{H}^{n}(R)$ model hiperboličnega prostora dimenzije $n$ in polmera $R$, ter so vsi modeli med seboj izometrični, ima vsak hiperbolični prostor konstantno negativno Gaussovo ukrivljenost. Velja tudi $\textup{sec}(\mathbb{H}^{n}(R)) = -1/R^2$, kjer $\textup{sec}$ označuje "prerezno" ukrivljenost. Za poljubne $R>0$ dobimo vse možne vrednosti konstantno negativne prerezne ukrivljenosti, ki ustrezajo hiperboličnim prostorom polmera $R$.
+ Za fiksen izbor števil $n \in \mathbb{N}, \ R>0$ je $\kappa = \mbox{konst.}<0$. Ker je $\mathbb{H}^{n}(R)$ model hiperboličnega prostora dimenzije $n$ in polmera $R$, ter so vsi modeli med seboj izometrični, ima vsak hiperbolični prostor konstantno negativno Gaussovo ukrivljenost. Velja tudi $\textup{sec}(\mathbb{H}^{n}(R)) = -1/R^2$, kjer $\textup{sec}$ označuje \emph{prerezno ukrivljenost}. Za poljubne $R>0$ dobimo vse možne vrednosti konstantno negativne prerezne ukrivljenosti, ki ustrezajo hiperboličnim prostorom polmera $R$.
 
 Naslednji rezultat bomo le navedli brez dokaza. Pomemben in zanimiv je zato, ker klasificira Riemannove mnogoterosti glede na njihovo prerezno ukrivljenost.
 
 \begin{izrek}[Killing-Hopf]
-Naj bo $n \geq 2$ in $(M,g)$ kompletna~\footnote{Riemannova mnogoterost je \emph{kompletna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
+Naj bo $n \geq 2$ in $(M,g)$ polna~\footnote{Riemannova mnogoterost je \emph{polna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
 Riemannova mnogoterost dimenzije $n$ s konstantno prerezno ukrivljenostjo. Potem je $M$ izometrična natanko enemu izmed prostorov: Evklidskemu prostoru $\mathbb{R}^{n}$, $n$-sferi $\mathbb{S}^{n}(R)$ ali hiperboličnemu prostoru $\mathbb{H}^{n}(R)$.
 \end{izrek}
 
-Ker po zgornjih ugotovitvah vemo, da imajo hiperbolični prostori konstantno negativno prerezno ukrivljenost, bi model hiperboličnega prostora lahko definirali kot kompletno enostavno povezano Riemannovo mnogoterost s konstantno negativno prerezno ukrivljenostjo.
+Ker po zgornjih ugotovitvah vemo, da imajo hiperbolični prostori konstantno negativno prerezno ukrivljenost, bi model hiperboličnega prostora lahko definirali kot polno enostavno povezano Riemannovo mnogoterost s konstantno negativno prerezno ukrivljenostjo.
 
 %%%%%%%%%%%%%%%%%%%
 % Geodetke na hiperboličnih prostorih
-\subsection{Geodetke na hiperbolčnih prostorih}
+\subsection{Geodetke na modelih hiperboličnih prostorov}
 
 \begin{izrek}
 Maksimalne geodetke na hiperboličnem prostoru so natanko
@@ -376,6 +402,7 @@ Maksimalne geodetke na hiperboličnem prostoru so natanko
 %
 \item premice, vzporedne $\tau$-osi, ali polkrožnice s središči na robu $\partial\mathbb{U}^{n}(R)$, kadar je model \textup{Poincar\'ejev polprostor} $\mathbb{U}^{n}(R)$.
 \end{enumerate}
+Dodatno, hiperbolični prostor je geodetsko poln (maksimalne geodetke obstajajo za vse $t \in \mathbb{R}$).
 \end{izrek}
 
 % dokaz geodetk
@@ -383,7 +410,7 @@ Maksimalne geodetke na hiperboličnem prostoru so natanko
 {\em Dokaz:\/}
 % hiperboloid
 Najprej bomo obravnavali model hiperboloida $\mathbb{H}^{n}(R)$.
-Opazimo, da je na hiperboloidu tangentna komponenta "povezave" $\nabla^{\perp}$ enaka Levi-Civita, saj je $\mathbb{H}^{n}(R)$ vložena podmnogoterost v $\mathbb{R}^{n,1}$.
+Opazimo, da je na hiperboloidu tangentna komponenta povezave $\nabla^{\perp}$ enaka Levi-Civita, saj je $\mathbb{H}^{n}(R)$ vložena podmnogoterost v $\mathbb{R}^{n,1}$.
 Geodetke na hiperboloidu zato lahko karakteriziramo z naslednjim pogojem: krivulja $\gamma \colon I \subset \mathbb{R} \to \mathbb{H}^{n}(R)$ je geodetka natanko tedaj, ko je za vse $t$ vektor $\gamma''(t)$ pravokoten na tangentni prostor $T_{\gamma(t)}\mathbb{H}^{n}(R)$ glede na metriko Minkowskega $\bar{q}$.
 
 Vzemimo poljubno točko $p \in \mathbb{H}^{n}(R)$ in jo kot v dokazu trditve~\ref{trd: frame-homo} identificirajmo z vektorjem dolžine $R$ v $T_{p}\mathbb{R}^{n,1}$. Naj bo $F$ funkcija, ki definira hiperboloid (enakost~\ref{eq:H^n enacba}).
@@ -404,7 +431,7 @@ Krivulja $\gamma_{v}$ je gladka vložitev $\mathbb{R} \to \mathbb{H}^{n}(R)$, ka
 
 Naj bo $\Sigma \subset \mathbb{R}^{n,1}$ taka ravnina z ortonormirano bazo $\{v,p\}$, da je njen presek s hiperboloidom $\mathbb{H}^{n}(R)$ glavna hiperbola $H$. Potem je $H$ slika geodetke z začetno točko $p$ (točka $p$ in pripadajoč vektor sta identificirana) in začetno hitrostjo $v$.\newline
 
-Dokazali smo, da so maksimalne geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov.\newline
+Dokazali smo, da so maksimalne geodetke na hiperboloidu natanko glavne hiperbole. Modeli hiperboličnih prostorov so med seboj izometrični, zato zaradi naravnosti Levi-Civita sledi, da so geodetke v vseh modelih vložitve $\mathbb{R}$ v $\mathbb{R}^{n,1}$. Geodetke so torej definirane za vse čase $t$, kar je posebej lepa lastnost hiperboličnih prostorov, imenovana \emph{geodetska polnost}.\newline
 
 % Beltrami-Kleinov model
 Oglejmo si Beltrami-Kleinov model. Vemo, da izometrijo med hiperboloidom in Beltrami-Kleinovim modelom definira predpis $c \colon \mathbb{H}^{n}(R) \to \mathbb{K}^{n}(R)$, $c(x,\tau) = \frac{R}{\tau}x$. Iz zgornjega vemo še, da je slika maksimalne geodetke na hiperboloidu glavna hiperbola.
