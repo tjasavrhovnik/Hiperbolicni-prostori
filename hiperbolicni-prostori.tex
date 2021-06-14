@@ -40,9 +40,9 @@
 % Uvod
 \section{Uvod}
 
-Članek obravnava razred Riemannovih mnogoterosti, imenovanih hiperbolični prostori. Maksimalno simetrične Riemannove mnogoterosti ločimo glede na vrednosti njihove Gaussove ukrivljenosti. Model tistih z ničelno je evklidski prostor $\mathbb{R}^{n}$, $n$-dimenzionalna sfera $\mathbb{S}^{n}(R)$ je modelni prostor s konstantno pozitivno Gaussovo ukrivljenostjo, konstantna negativna Gaussova ukrivljenost pa je lastnost hiperboličnih prostorov $\mathbb{H}^{n}(R)$.
+Članek obravnava razred Riemannovih mnogoterosti, imenovanih hiperbolični prostori. Maksimalno simetrične Riemannove mnogoterosti ločimo glede na vrednosti njihove Gaussove ukrivljenosti. Model tistih z ničelno je Evklidski prostor $\mathbb{R}^{n}$, $n$-dimenzionalna sfera $\mathbb{S}^{n}(R)$ je modelni prostor s konstantno pozitivno Gaussovo ukrivljenostjo, konstantna negativna Gaussova ukrivljenost pa je lastnost hiperboličnih prostorov $\mathbb{H}^{n}(R)$.
 
-Že samo ime makismalna simetričnost pove, da imajo taki prostori visoko simetrijo. Nekatere lastnosti, ki so posledice tega dejstva, bomo opisali v nadaljevanju. Predstavili bomo štiri osnovne modele $n$-dimenzionalnega hiperboličnega prostora in s konstrukcijo preslikav med njimi dokazali izometričnost modelov. S pomočjo slednjega bomo na vsakem izmed modelov poiskali geodetke ter navedli vrednost Gaussove ukrivljenosti. Čeprav se na prvi pogled zdi, da hiperboličnih prostorov ni mogoče primerjati z evklidskimi, se izkaže, da sta lokalno konformno izomorfna. Na kratko si bomo ogledali hiperbolično geometrijo, ki se je nedolgo nazaj razvila iz ravninske (evklidske) geometrije. 
+Že samo ime makismalna simetričnost pove, da imajo taki prostori visoko simetrijo. Nekatere lastnosti, ki so posledice tega dejstva, bomo opisali v nadaljevanju. Predstavili bomo štiri osnovne modele $n$-dimenzionalnega hiperboličnega prostora in s konstrukcijo preslikav med njimi dokazali izometričnost modelov. S pomočjo slednjega bomo na vsakem izmed modelov poiskali geodetke ter navedli vrednost Gaussove ukrivljenosti. Čeprav se na prvi pogled zdi, da hiperboličnih prostorov ni mogoče primerjati z Evklidskimi, se izkaže, da sta lokalno konformno izomorfna. Na kratko si bomo ogledali hiperbolično geometrijo, ki se je nedolgo nazaj razvila iz ravninske (Evklidske) geometrije. 
 
 Študij hiperboličnih prostorov ni zanimiv le z matematične perspektive. Če na $4$-dimenzionalnem hiperboličnem prostoru, natančneje, prostoru Minkowskega, izberemo tri prostorske in eno časovno koordinato, z njim lahko opišemo prostor-čas v teoriji relativnosti. To ima velik pomen za računanje fizikalnih invariant ter nenazadnje razumevanje lastnosti našega vesolja. 
 
@@ -50,7 +50,7 @@
 % Osnovne definicije
 \section{Osnovne definicije}
 
-Naslednje definicije opisujejo mnogoterosti z visoko simetrijo. Natančneje to pomeni, da so njihove grupe izometrij velike. Najpreprostejši primer so Evklidski prostori - zanje že intuitivno vemo, da obstajajo preslikave, izometrije, ki poljubni točki preslikajo eno v drugo, celo več, ortonormirano bazo v prvi točki lahko preslikajo v ortonormirano bazo v drugi. Izkazalo se bo, da to niso edini taki prostori. Drug primer so $n$-dimenzionalne sfere $\mathbb{S}^{n}$, mi pa se bomo posvetili študiju hiperboličnih prostorov.
+Naslednje definicije opisujejo mnogoterosti z visoko simetrijo. Natančneje to pomeni, da so njihove grupe izometrij velike. Najpreprostejši primer so Evklidski prostori -- zanje že intuitivno vemo, da obstajajo preslikave, izometrije, ki poljubni točki preslikajo eno v drugo, celo več, ortonormirano bazo v prvi točki lahko preslikajo v ortonormirano bazo v drugi. Izkazalo se bo, da to niso edini taki prostori. Drug primer so $n$-dimenzionalne sfere $\mathbb{S}^{n}$, mi pa se bomo posvetili študiju hiperboličnih prostorov. Definicije sledijo~\cite[3.~poglavje]{leeRM}.
 
 % izometrija
 \begin{definicija}
@@ -82,7 +82,7 @@ Označimo z $\textup{O}(M) = \sqcup_{p \in M} \{ \text{ortonormirane baze} \ T_{
 \end{equation}
 
 \begin{definicija}
-Riemannova mnogoterost $(M,g)$ je \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
+Riemannova mnogoterost $(M,g)$ je \emph{maksimalno simetrična}, če je delovanje~\ref{eq:delovanje} tranzitivno na množici $\textup{O}(M)$; natančneje, če za poljuben par točk $p,q \in M$ in poljuben izbor ortonormiranih baz na tangentnih prostorih $T_{p}M$ in $T_{q}M$ obstaja izometrija, ki preslika $p$ v $q$ ter ortonormirano bazo v točki $p$ v izbrano ortonormirano bazo v točki $q$.
 \end{definicija}
 
 Geometrično si homogeno Riemannovo mnogoterost predstavljamo kot tako, ki v vsaki točki na njej izgleda enako.
@@ -111,12 +111,12 @@ V tem razdelku bomo navedli modele hiperboličnih prostorov, ki so maksimalno si
 Naj bo $n \geq 1$ in izberimo $R>0$.
 \emph{$(n+1)$-dimenzionalni prostor Minkowskega} je prostor $\mathbb{R}^{n,1}$, ki ga v standardnih koordinatah $(x^{1}, \dots , x^{n}, \tau)$ opremimo z \emph{metriko Minkowskega}
 \begin{equation}\label{eq:Mink metrika}
-\bar{q}^{n,1} = (dx^{1})^2 + \cdots + (dx^{n})^2 - (d\tau)^2.
+\bar{q}^{(n,1)} = (dx^{1})^2 + \cdots + (dx^{n})^2 - (d\tau)^2.
 \end{equation}
-Metriko $\bar{q}^{n,1}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
+Metriko $\bar{q}^{(n,1)}$ bomo v nadaljevanju označevali preprosto s $\bar{q}$.
 
 \begin{primer}
-4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Grupo izometrij, $\textup{O}(3,1)$, imenovano \emph{Poincar\'ejeva grupa} sestavlja $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in trije Lorentzovi potiski (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
+4-dimenzionalni prostor Minkowskega $\mathbb{R}^{3,1}$ s koordinatami $(x,y,z,t)$ opisuje prostor-čas v Einsteinovi teoriji relativnosti. Njegovo grupo izometrij $\textup{O}(3,1)$, imenovano \emph{Poincar\'ejeva grupa}, sestavlja $10$ generatorjev: tri prostorske in ena časovna translacija, tri rotacije (v ravninah $(x,y)$, $(x,z)$, $(y,z)$) in trije Lorentzovi potiski (rotacije v ravninah $(t,x)$, $(t,y)$, $(t,z)$).
 \end{primer}
 
 Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboličnega prostora dimenzije $n$ in polmera $R$.
@@ -125,7 +125,7 @@ Sedaj definirajmo štiri Riemannove mnogoterosti, ki so osnovni modeli hiperboli
 \begin{enumerate}
 \item
 % hiperboloid
-\textsc{Hiperboloid} $\mathbb{H}^{n}(R)$.
+\textsc{Hiperboloid} $\mathbb{H}^{n}(R)$
 
 Vzemimo $(n+1)$-dimenzionalni prostor Minkowskega $\mathbb{R}^{n,1}$ s standardnimi koordinatami $(x^{1}, \dots , x^{n}, \tau)$ in metriko $\bar{q}$.
 Pozitivni del ($\tau > 0$) dvodelnega hiperboloida $(x^{1})^2 + \cdots + (x^{n})^2 - \tau^2 = -R^2$ opremimo z metriko
@@ -180,7 +180,7 @@ S preoblikovanjem zgornje zveze dobimo
 \begin{gather}
 R = \frac{e^{r}-1}{e^{r}+1} = \tanh{\frac{r}{2}},
 \end{gather}
-ki pove, kako se (evklidski) polmer Poincar\'ejeve krogle $\mathbb{B}^{n}(R)$ izraža s hiperbolično razdaljo $r$.\newline 
+ki pove, kako se (Evklidski) polmer Poincar\'ejeve krogle $\mathbb{B}^{n}(R)$ izraža s hiperbolično razdaljo $r$.\newline 
 Kolikšna pa je njena prostornina?
 Naj bo $d\mu^{n}(w)$ volumski element za $\mathbb{B}^{n}(R)$ (koordinate $w=(u,v)$). Velja $d\mu^{n}(w) = u^{n-1} d\textup{Vol}(\mathbb{S}^{n-1})(v)$. Sledi 
 \begin{align*}
@@ -212,7 +212,7 @@ Prostor $\mathbb{H}^{n}(R)$ lahko opišemo kot
 \mathbb{H}^{n}(R) = F^{-1}(-R^2) \cap \{ \tau>0 \},
 \end{equation}
 kjer je preslikava $F \colon \mathbb{R}^{n+1} \to \mathbb{R}$ definirana s predpisom $F(x^{1}, \dots , x^{n}, \tau) = \sum_{i=1}^{n} (x^{i})^2 - \tau^2$.
-Tangentni prostor v točki $p \in \mathbb{H}^{n}(R)$, ki je enak $T_{p}\mathbb{H}^{n}(R) = \ker dF_{p}$, razpenjajo vektorji $X^{i} = \tau \frac{\partial}{\partial x^{i}} + x^{i} \frac{\partial}{\partial \tau}$ za $i = 1, \dots , n$. Ker je njihov produkt (glede na metriko $\bar{q}$) pozitiven, je metrika $\u g_{R}^{1}$ pozitivno definitna in določa Riemannovo podmnogoterost $(\mathbb{H}^{n}(R), \u g_{R}^{1})$. 
+Tangentni prostor v točki $p \in \mathbb{H}^{n}(R)$, ki je enak $T_{p}\mathbb{H}^{n}(R) = \ker dF_{p}$, razpenjajo vektorji $X^{i} = \tau \frac{\partial}{\partial x^{i}} + x^{i} \frac{\partial}{\partial \tau}$ za $i = 1, \dots , n$. Ker so njihovi produkti (glede na metriko $\bar{q}$) pozitivni, je metrika $\u g_{R}^{1}$ pozitivno definitna in določa Riemannovo podmnogoterost $(\mathbb{H}^{n}(R), \u g_{R}^{1})$. 
 
 % Centralna projekcija
 \subsubsection{Centralna projekcija}
@@ -223,8 +223,10 @@ Tedaj se koordinate točke $Y$ izražajo s koordinatami $T$, natančneje, $Y=\fr
 \begin{equation}\label{eq: cent-proj}
 c(x, \tau) = \frac{R}{\tau} x.
 \end{equation}
-Ker slika točke s preslikavo $c$ leži na hiperboloidu, velja
-\[ |c(x,\tau)|^2 = \frac{R^2}{\tau^2} |x|^2 = \frac{R^2}{\tau^2}(\tau^2-R^2) = R^2 \left(1-\frac{R^2}{\tau^2} \right) < R^2, \]
+Ker točka $(x,\tau)$ leži na hiperboloidu, velja
+\begin{gather*}
+|c(x,\tau)|^2 = \frac{R^2}{\tau^2} |x|^2 = \frac{R^2}{\tau^2}(\tau^2-R^2) = R^2 \left(1-\frac{R^2}{\tau^2} \right) < R^2,
+\end{gather*}
 torej je $c(x, \tau) \in \mathbb{K}^{n}(R)$ in je centralna projekcija dobro definirana.
 
 Da je preslikava $c$ difeomorfizem, bomo pokazali s konstrukcijo njenega inverza.
@@ -236,13 +238,15 @@ c^{-1}(y) = \left( \frac{Ry}{(R^2-|y|^2)^{1/2}}, \frac{R^2}{(R^2-|y|^2)^{1/2}} \
 definira gladko preslikavo, ki je inverz centralne projekcije.
 
 Nazadnje dokažimo, da je $c$ izometrija. Želimo videti, da velja enakost $(c^{-1})^{*} \u g_{R}^{1} = \u g_{R}^{2}$.
-Diferenciali točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ so enaki
+Diferenciali koordinat točke $(x, \tau) = c^{-1}(y)$ iz enačbe~\ref{eq:c^{-1}} za nek $y \in \mathbb{K}^{n}(R)$ so enaki
 \begin{gather*}
 dx^{i} = \frac{Rdy^{i}}{(R^2-|y|^2)^{1/2}} + \frac{Ry^{i} \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}, \\
 d\tau = \frac{R^2 \sum_{k=1}^{n}y^{k}dy^{k}}{(R^2-|y|^2)^{3/2}}.
 \end{gather*}
 Od tod izračunamo
-\[ (c^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = R^2 \frac{\sum_{i=1}^{n}(dy^{i})^2}{R^2-|y|^2} + R^2 \frac{(\sum_{i=1}^{n}y^{i}dy^{i})^2}{(R^2-|y|^2)^2} = \u g_{R}^{2}. \]
+\begin{gather*}
+(c^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = R^2 \frac{\sum_{i=1}^{n}(dy^{i})^2}{R^2-|y|^2} + R^2 \frac{(\sum_{i=1}^{n}y^{i}dy^{i})^2}{(R^2-|y|^2)^2} = \u g_{R}^{2}.
+\end{gather*}
 Torej je centralna projekcija res izometrija med $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{K}^{n}(R), \u g_{R}^{2})$.
 
 % Hiperbolična stereografska projekcija
@@ -260,7 +264,9 @@ od koder izračunamo koeficient $\lambda = \frac{R}{\tau+R}$. Formula, ki določ
 h(x,\tau) = \frac{R}{\tau+R}x.
 \end{equation}
 Ker točka $(x,\tau)$ leži na hiperboloidu, ocenimo
-\[ |h(x,\tau)|^2 = \frac{R^2}{(\tau+R)^2} |x|^2 = R^2 \frac{\tau^2-R^2}{\tau^2+R^2} < R^2, \]
+\begin{gather*}
+|h(x,\tau)|^2 = \frac{R^2}{(\tau+R)^2} |x|^2 = R^2 \frac{\tau^2-R^2}{\tau^2+R^2} < R^2,
+\end{gather*}
 zato preslikava $h$ res slika v Poincar\'ejevo kroglo $\mathbb{B}^{n}(R)$.
 
 Konstruirajmo inverz preslikave. Komponente točke $T \in \mathbb{H}^{n}(R)$ se v odvisnosti od koeficienta $\lambda$ izražajo kot
@@ -281,12 +287,14 @@ dx^{i} = \frac{2R^2dv^{i}}{R^2-|v|^2} + \frac{4R^2v^{i} \sum_{k=1}^{n}v^{k}dv^{k
 d\tau = \frac{2R \sum_{k=1}^{n}v^{k}dv^{k}}{R^2-|v|^2} + \frac{2R(R^2+|v|^2) \sum_{k=1}^{n}v^{k}dv^{k}}{(R^2-|v|^2)^2}.
 \end{gather*}
 Z nekaj računanja dobimo
-\[ (h^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = \u g_{R}^{3}. \]
+\begin{gather*}
+(h^{-1})^{*} \u g_{R}^{1} = \sum_{i=1}^{n} (dx^{i})^2 - (d\tau)^2 = \u g_{R}^{3}. 
+\end{gather*}
 Pokazali smo, da je hiperbolična stereografska projekcija izometrija prostorov $(\mathbb{H}^{n}(R), \u g_{R}^{1})$ in $(\mathbb{B}^{n}(R), \u g_{R}^{3})$.
 
 % Cayleyjeva transformacija
 \subsubsection{Posplošena Cayleyjeva transformacija}
-Omenimo še konstrukcijo izometrije med Poincar\'ejevo polravnino in Poincar\'ejevo kroglo. 
+Omenimo še konstrukcijo izometrije med Poincar\'ejevim polprostorom in Poincar\'ejevo kroglo. 
 V dvodimenzionalnem primeru smo v domači nalogi videli, da izometrijo med Poincar\'ejevo polravnino $\mathbb{U}$ in Poincar\'ejevim diskom $\mathbb{D}$ (za $R=1$) podaja M\"obiusova transformacija $\tau \colon \mathbb{U} \to \mathbb{D}$, definirana s predpisom
 \begin{equation}
 \tau(z) = \frac{1+iz}{z+i},
@@ -301,19 +309,19 @@ k(x,y) = \left( \frac{2xR^2}{x^2+(y+R)^2}, R \frac{x^2+y^2-R^2}{x^2+(y+R)^2} \ri
 \end{equation}
 Preslikavi $k$ pravimo \emph{Cayleyjeva transformacija}.
 
-V splošnem primeru koordinate na Poincar\'ejevem polprostoru $\mathbb{U}^{n}(R)$ zapišimo kot $(x^{1}, \dots , x^{n}, y) = (x,y)$ in uporabimo zgornji predpis. Novo preslikavo, ki je prav tako izometrija, imenujemo \emph{posplošena Cayleyjeva transformacija}.
+V splošnem primeru koordinate na Poincar\'ejevem polprostoru $\mathbb{U}^{n}(R)$ zapišemo kot $(x^{1}, \dots , x^{n}, y) = (x,y)$ in uporabimo zgornji predpis. Novo preslikavo, ki je prav tako izometrija, imenujemo \emph{posplošena Cayleyjeva transformacija}.
 
 %%%%%%%%%%%%%%%%%%%
 % Lastnosti hiperboličnih prostorov
 \subsection{Lastnosti hiperboličnih prostorov}
 
 \begin{trditev}
-Hiperbolični prostor $(\mathbb{H}^{n}(R), \u g)$ je lokalno konformno ploščat.
+Hiperbolični prostor $(\mathbb{H}^{n}(R), \u g_{R})$ je lokalno konformno ploščat.
 \end{trditev}
 
 \noindent
 {\em Dokaz:\/} 
-Za model hiperboličnega prostora vzemimo Poincar\'ejevo kroglo  $\mathbb{B}^{n}(R)$. Identična preslikava $id \colon (\mathbb{B}^{n}(R), \u g_{R}^{3}) \to (\mathbb{R}^{n}, \bar{g})$ je konformna in porodi konformno ekvivalenco Poincar\'ejeve krogle z odprto podmnožico Evklidskega prostora. Zaradi izometričnosti modelov sledi, da je hiperbolični prostor lokalno konformno ploščat.
+Za model hiperboličnega prostora vzemimo Poincar\'ejevo kroglo  $\mathbb{B}^{n}(R)$. Identična preslikava $id \colon (\mathbb{B}^{n}(R), \u g_{R}^{3}) \to (\mathbb{R}^{n}, \bar{g})$ je konformna in porodi konformno ekvivalenco Poincar\'ejeve krogle z odprto podmnožico Evklidskega prostora. Zaradi izometričnosti modelov sledi, da je vsak hiperbolični prostor lokalno konformno ploščat.
 \qed
 
 % Lorentzova grupa
@@ -337,7 +345,7 @@ Tedaj je gradient preslikave $F$ glede na metriko $\bar{q}$ enak
 \begin{equation}
 \textup{grad} F = 2 \sum_{i=1}^{n} x^{i} \frac{\partial}{\partial x^{i}} + 2\tau \frac{\partial}{\partial \tau}. \nonumber
 \end{equation} 
-Opazimo, da je $\bar{p} = 2 \cdot \textup{grad} F$ in zato $\bar{p} \perp T_{p}\mathbb{H}^{n}(R)$.
+Opazimo, da je $\bar{p} = \lambda \cdot \textup{grad} F$ ($\lambda > 0$) in zato $\bar{p} \perp_{\bar{q}} T_{p}\mathbb{H}^{n}(R)$.
 Potem je množica $\{ e_{1}, \dots , e_{n}, \bar{p} \}$ ortonormirana baza prostora $\mathbb{R}^{n,1}$ glede na metriko $\bar{q}$.
 
 Naj bo $M$ matrika, katere stolpci so vektorji iz zgornje ortonormirane baze. Po konstrukciji velja $M \in \textup{O}^{+}(n,1)$ in $M$ slika $\{\partial_{1}, \dots , \partial_{n+1} \}$ v $\{e_{1}, \dots , e_{n}, \bar{p} \}$ ter $N$ v $p$.
@@ -363,7 +371,7 @@ Hiperbolični prostor je simetričen.
 {\em Dokaz:\/} 
 Naj bo $(M,g)$ povezana maksimalno simetrična Riemannova mnogoterost. Naj bo $p \in M$ poljubna točka in izberimo ortonormirano bazo $\{ e_{i} \}_{i}$ za $T_{p}M$. Ker je mnogoterost maksimalno simetrična, obstaja izometrija $\phi \colon M \to M$, ki $p$ preslika vase, ortonormirano bazo $\{e_{i} \}_{i}$ pa preslika v $\{ -e_{i} \}_{i}$. Torej zadošča $d\phi_{p} = -\textup{Id}$. To pa je natanko simetričnost.
 
-V posebnem, hiperbolični prostor je povezana Riemannova mnogoterost in po že dokazanem maksimalno simetričen. Iz zgornjega sledi njegova simetričnost. 
+V posebnem, hiperbolični prostor je povezana Riemannova mnogoterost, ki je po že dokazanem maksimalno simetrična. Iz zgornjega sledi njegova simetričnost. 
 \qed
 
 %%%%%%%%%%%%%%%%%%%
@@ -421,7 +429,7 @@ Traktoid ima konstantno negativno Gaussovo ukrivljenost in spada med hiperbolič
 Naslednji rezultat bomo le navedli brez dokaza. Povzet je po \cite[Theorem 12.4 (Killing-Hopf)]{leeRM}. Pomemben in zanimiv je zato, ker klasificira Riemannove mnogoterosti glede na njihovo prerezno ukrivljenost.
 
 \begin{izrek}[Killing-Hopf]
-Naj bo $n \geq 2$ in $(M,g)$ polna~\footnote{Riemannova mnogoterost je \emph{polna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
+Naj bo $n \geq 2$ in $(M,g)$ polna~\footnote{Riemannova mnogoterost je \emph{(geodetsko) polna}, če so maksimalne geodetke definirane za vse $t \in \mathbb{R}$.} enostavno povezana~\footnote{Spomnimo se, da je s potmi povezana topološka mnogoterost \emph{enostavno povezana} natanko tedaj, ko ima trivialno prvo fundamentalno grupo.} 
 Riemannova mnogoterost dimenzije $n$ s konstantno prerezno ukrivljenostjo. Potem je $M$ izometrična natanko enemu izmed prostorov: Evklidskemu prostoru $\mathbb{R}^{n}$, $n$-sferi $\mathbb{S}^{n}(R)$ ali hiperboličnemu prostoru $\mathbb{H}^{n}(R)$.
 \end{izrek}
 
@@ -480,8 +488,7 @@ Glavno hiperbolo opisuje sistem enačb
 \lambda_{i}x^{i} + \mu \tau = 0, \ i=1, \dots , n
 \end{gather}
 za $\lambda_{i}, \mu \in \mathbb{R}$.
-Točka $(x,\tau)$ zadošča zgornji enačbi natanko takrat,
-~\footnote{Res, če je $\lambda_{i}x^{i}+\mu \tau=0$, je $\tau=-\frac{\lambda_{i}x^{i}}{\mu}$ in $y^{i}=\frac{Rx^{i}}{\tau}=-\frac{R\mu}{\lambda_{i}}$. 
+Točka $(x,\tau)$ zadošča zgornji enačbi natanko takrat,~\footnote{Res, če je $\lambda_{i}x^{i}+\mu \tau=0$, je $\tau=-\frac{\lambda_{i}x^{i}}{\mu}$ in $y^{i}=\frac{Rx^{i}}{\tau}=-\frac{R\mu}{\lambda_{i}}$. 
 Obratno, naj velja $\lambda_{i}y^{i} + \mu R = 0$. Računamo $\lambda_{i}x^{i}+\mu \tau = \lambda_{i}x^{i} - \frac{\lambda_{i}y^{i}\tau}{R} = \lambda_{i} (x^{i} - \frac{y^{i}\tau}{R}) = \lambda_{i} \cdot 0 = 0$. Ekvivalenca je dokazana.} 
 ko za njeno sliko $c(x,\tau)=y$ velja 
 \begin{gather}\label{eq: af-pog}
@@ -514,29 +521,29 @@ Geodetke na Poincar\'ejevem polprosotoru so torej natanko premice, vzporedne $\t
 % Hiperbolična geometrija
 \section{Hiperbolična geometrija}
 
-V tem poglavju se bomo ukvarjali z dvodimenzionalnimi prostori. Hiperbolični prostor tako postane hiperbolična ravnina, ki je model neevklidske hiperbolične geometrije.
+V tem poglavju se bomo ukvarjali z dvodimenzionalnimi prostori. Hiperbolični prostor tako postane hiperbolična ravnina, ki je model Neevklidske hiperbolične geometrije.
 
 Evklidska ravninska geometrija je zgrajena na sistemu aksiomov, ki jih je prvi zasnoval Evklid okoli leta 300~pr.~n.~št. v knjigi Elementi. Njegova ideja je bila iz nekaj osnovnih preprostih resnic izpeljati nove trditve. Evklidove aksiome je ob koncu 19.~stoletja v modernejši matematični jezik prevedel David Hilbert, čigar sistem je sestavljen iz petih skupin aksiomov: aksiomi lege in povezave, aksiomi urejenosti, aksiomi skladnosti, aksiomi zveznosti in aksiom o vzporednici.
-Hiperbolična geometrija izpolnjuje vse aksiome prvih štirih skupin, namesto zadnjega pa zahtevamo \\[0.4cm]
-\textsc{Aksiom o vzporednici}: Za vsako premico $p$ in točko $T$, ki ne leži na premici $p$, obstajata vsaj dve vzporednici premice $p$, ki gresta skozi točko $T$. \\[0.4cm]
-Zakaj je aksiom o vzporednici drugačen? Matematikom se je ta aksiom več stoletij zdel odveč - želeli so ga izpeljati iz preostalih. Vendar to ni možno. To je vodilo do definicije hiperbolične geometrije, ki sta jo v 30.-ih letih 19.~stoletja neodvisno odkrila Lobachevsky in Bolyai.
+Hiperbolična geometrija izpolnjuje vse aksiome prvih štirih skupin, namesto zadnjega pa zahtevamo \\[0.35cm]
+\textsc{Aksiom o vzporednici}: Za vsako premico $p$ in točko $T$, ki ne leži na premici $p$, obstajata vsaj dve vzporednici premice $p$, ki gresta skozi točko $T$. \\[0.35cm]
+Zakaj je aksiom o vzporednici drugačen? Matematikom se je ta aksiom več stoletij zdel odveč -- želeli so ga izpeljati iz preostalih. Vendar to ni možno. To je vodilo do definicije hiperbolične geometrije, ki sta jo v 30.-ih letih 19.~stoletja neodvisno odkrila Lobachevsky in Bolyai.
 
-Hiperbolična geometrija je torej zgrajena na analogen način kot ravninska. Namesto evklidske ravnine $\mathbb{R}^2$ izberemo hiperbolično ravnino $\mathbb{H}^2$, evklidsko metriko pa nadomestimo s hiperbolično metriko $\u g$ (zaradi izometričnosti je vseeno, katero izmed hiperboličnih metrik izberemo).
+Hiperbolična geometrija je torej zgrajena na analogen način kot ravninska. Namesto Evklidske ravnine $\mathbb{R}^2$ izberemo hiperbolično ravnino $\mathbb{H}^2$, Evklidsko metriko pa nadomestimo s hiperbolično metriko $\u g$ (zaradi izometričnosti je vseeno, katero izmed hiperboličnih metrik izberemo).
 Brez dokazov navedimo nekaj ekvivalentov novemu aksiomu o vzporednici.
 \begin{enumerate}
 \item Vsota notranjih kotov trikotnika je manjša od $\pi$.
 \item Pravokotnik ne obstaja.
 \item Podobna trikotnika sta skladna.
 \end{enumerate}
-Iz aksiomov hiperbolične geometrije lahko izpeljemo številne lastnosti, ki pokažejo razlike med evklidsko in neevklidsko geometrijo.
+Iz aksiomov hiperbolične geometrije lahko izpeljemo številne lastnosti, ki pokažejo razlike med Evklidsko in Neevklidsko geometrijo.
 
 \begin{primer}[Poincar\'ejev disk]
 Na Poincar\'ejevem disku so točke običajne točke, za premice izberemo geodetke na disku, koti so običajni (kot med krožnicama je enak kotu med tangentama na krožnici). Ilustracija aksioma o vzporednici je predstavljena na spodnji sliki.
 %
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.13]{poincare-disk-5aksiom.png}
-\caption{Na Poincar\'ejevem disku za dani točko in premico obstaja neskončno vzporednic premici skozi izbrano točko.~\cite[vir slike]{hypGeom-wiki}.}
+\includegraphics[scale=0.115]{poincare-disk-5aksiom.png}
+\caption{Na Poincar\'ejevem disku za dani točko in premico obstaja neskončno vzporednic premici skozi izbrano točko.~\cite[vir slike]{hypGeom-wiki}}
 \end{center}
 \end{figure}
 %
@@ -556,7 +563,7 @@ Na Poincar\'ejevem disku so točke običajne točke, za premice izberemo geodetk
 
 \geslo{hyperbolic metric}{hiperbolična metrika}
 
-\geslo{hyperbolic space}{hiperboličen prostor}
+\geslo{hyperbolic space}{hiperbolični prostor}
 
 \geslo{isometry}{izometrija}
 
